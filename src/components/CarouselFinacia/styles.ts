@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerContent =styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #a3b18a;
+    background-color: #2a9d8f;
     width: 70vw;
     height: 60vh;
     margin: 0 auto;
@@ -11,7 +11,7 @@ export const ContainerContent =styled.div`
 
     & .title-and-description {
         margin-top: 10px;
-        margin-left: 60px;
+        margin-left: 30px;
 
          > h2 {
              color: #fff;
@@ -44,7 +44,7 @@ export const ContainerContent =styled.div`
 
     & .poltrona {
         margin-top: 120px;
-        margin-left: 80px;
+        margin-left: 30px;
         > img {
             width: 14vw;
          

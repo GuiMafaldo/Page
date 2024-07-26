@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { CarouselContainer, CarouselContent, ContainerContent } from './styles'
+import {  CarouselContent, ContainerContent } from './styles'
 
 const CarouselCompra = () => {
     const settings = {
@@ -16,22 +16,6 @@ const CarouselCompra = () => {
     }
     return(
             <ContainerContent>
-                <div className='title-and-description'>
-                    <h2>Alugar bem, sem <br />
-                        complicação e <br />
-                        fiador
-                    </h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore vel
-                         necessitatibus laboriosam sunt nesciunt quibusdam ratione laudantium 
-                         quo minima iusto. Laboriosam, repellat dolores eum dignissimos 
-                         corrupti officia porro et nostrum!
-                    </p>
-                    <button>Ver apartamentos para alugar</button> <br />
-                    <span>Como alugar no "name here"</span>
-                </div>
-                <div className='poltrona'>
-                    <img src="./assets/icon-poltrona.webp" alt="" />
-                </div>
                 <CarouselContent className="carousel-container">
                     <Slider {...settings} >
                         <div className='content-image'>
@@ -46,6 +30,22 @@ const CarouselCompra = () => {
                         </div>
                     </Slider>
                 </CarouselContent>
+                <div className='title-and-description'>
+                    <h2>Comprar seu <br />
+                        imóvel e ter um<br />
+                        cantinho só seu                       
+                    </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore vel
+                         necessitatibus laboriosam sunt nesciunt quibusdam ratione laudantium 
+                         quo minima iusto. Laboriosam, repellat dolores eum dignissimos 
+                         corrupti officia porro et nostrum!
+                    </p>
+                    <button>Ver apartamentos a venda</button> <br />
+                    <span>Como comprar no "name here"</span>
+                </div>
+                <div className='poltrona'>
+                    <img src="./assets/fechadura.webp" alt="" />
+                </div>
             </ContainerContent>
     )
 }

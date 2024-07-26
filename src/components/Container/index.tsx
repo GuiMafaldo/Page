@@ -1,5 +1,8 @@
+import CardProprietario from "../CardProprietario"
 import CardsProperties from "../CardsProperts"
-import CarouselImage from "../CarouselAluguel"
+import CarouselAluguel from "../CarouselAluguel"
+import CarouselCompra from "../CarouselCompra"
+import CarouselFinancia from "../CarouselFinacia"
 import FormularioCadastro from "../FormRegister"
 import HeaderPage from "../Header"
 import SearchContent from "../SearchForm"
@@ -15,8 +18,10 @@ const ContainerCompo = () =>{
             <FormularioCadastro />
             </ContentFlex>
             <InfoCompraVenda />
-            <CarouselImage />
-            <CardsProperties />
+            <CarouselAluguel />
+            <CarouselCompra />
+            <CarouselFinancia />
+            <CardProprietario />
         </>
     )
 }

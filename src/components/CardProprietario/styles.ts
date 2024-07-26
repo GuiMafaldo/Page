@@ -3,26 +3,25 @@ import styled from "styled-components";
 export const ContainerContent =styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #a3b18a;
+    background-color: #023e8a;
     width: 70vw;
     height: 60vh;
     margin: 0 auto;
     margin-top: 100px;
 
     & .title-and-description {
-        margin-top: 10px;
-        margin-left: 60px;
+        margin-top: 20px;
+        margin-left: 30px;
 
          > h2 {
              color: #fff;
-             font-size: 40px;
-             font-family: Helvetica; 
+            font-size: 42px;
+            font-family: Helvetica; 
          }
 
          > p {
              font-family: Helvetica;
              color: #fff;
-             
          }
 
          > button {
@@ -38,36 +37,42 @@ export const ContainerContent =styled.div`
 
          > span {
             font-family: Helvetica;
-            margin-left: 10px; 
+            margin-left: 30px;
+            color: #fff;
          }
     }
 
     & .poltrona {
-        margin-top: 120px;
-        margin-left: 80px;
+        margin-top: 70px;
         > img {
-            width: 14vw;
+            width: 18vw;
          
         }
     }
-`
+
+    & .acordo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fefae0;
 
 
-export const CarouselContainer = styled.div`
-    width: 70vw;
-    height: 70vh;
-`
+        > h2 {
+            font-size: 2.5em;
+            font-family: Helvetica;
+            margin-left: 20px;
+        }
 
-export const CarouselContent = styled.div`
-    display: block;
-    width: 30vw;
+        & .acordo-image {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 30px 80px 30px;
 
 
-    & .content-image {
-        
-        img{
-            width: 600px;
-            height: 552px;
+            img {
+                width: 100px;
+            }
         }
     }
 `
