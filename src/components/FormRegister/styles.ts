@@ -5,7 +5,7 @@ export const ContainerFormulario = styled.div`
     flex-direction: column;
     background-color: #fff;
     max-width: 380px;
-    margin-left: 60px;
+    margin-left: 160px;
     margin-top: 100px;
     width: 100%;
     height: 65vh;
@@ -24,7 +24,7 @@ export const ContainerFormulario = styled.div`
         background-color: #fff;
 
         & .active {
-            background-color: blue;
+            background-color: #669bbc;
             color: #fff;
         }    
         
@@ -98,7 +98,7 @@ export const ContentForm = styled.form`
         width: 80%;
         margin: 0 auto;
         padding: 14px;
-        background-color: blue;
+        background-color: #669bbc;
         color: #fff;
         font-weight: 700;
         font-family: Helvetica;

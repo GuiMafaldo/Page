@@ -1,8 +1,9 @@
 import CardsProperties from "../CardsProperts"
-import CarouselImage from "../Carousel"
+import CarouselImage from "../CarouselAluguel"
 import FormularioCadastro from "../FormRegister"
 import HeaderPage from "../Header"
 import SearchContent from "../SearchForm"
+import InfoCompraVenda from "../SectionInfo"
 import { ContentFlex } from "./styles"
 
 const ContainerCompo = () =>{
@@ -11,9 +12,10 @@ const ContainerCompo = () =>{
             <HeaderPage />
             <SearchContent />
             <ContentFlex>
-                <FormularioCadastro />
-                {/* <CarouselImage /> */}
+            <FormularioCadastro />
             </ContentFlex>
+            <InfoCompraVenda />
+            <CarouselImage />
             <CardsProperties />
         </>
     )

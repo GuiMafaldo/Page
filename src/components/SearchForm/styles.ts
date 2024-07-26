@@ -28,7 +28,7 @@ export const FormContent = styled.form`
         color: #fff;
         font-family: Helvetica;
         font-weight: 700;
-        background-color: #0d6efd; 
+        background-color: #669bbc; 
     }
 
      select {
