@@ -3,10 +3,13 @@ import CardsProperties from "../CardsProperts"
 import CarouselAluguel from "../CarouselAluguel"
 import CarouselCompra from "../CarouselCompra"
 import CarouselFinancia from "../CarouselFinacia"
+import ContainerFooter from "../FooterPage"
 import FormularioCadastro from "../FormRegister"
 import HeaderPage from "../Header"
 import SearchContent from "../SearchForm"
+import MostPolularesSearchs from "../SearchsPopulares"
 import InfoCompraVenda from "../SectionInfo"
+import ContentStates from "../States"
 import { ContentFlex } from "./styles"
 
 const ContainerCompo = () =>{
@@ -22,6 +25,9 @@ const ContainerCompo = () =>{
             <CarouselCompra />
             <CarouselFinancia />
             <CardProprietario />
+            <ContentStates />
+            <MostPolularesSearchs />
+            <ContainerFooter />
         </>
     )
 }
