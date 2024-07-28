@@ -16,7 +16,7 @@ export const CompraVendaInfo = styled.div`
 
         > h2 {
             font-family: Helvetica;
-            font-size: 44px;
+            font-size: 2em;
             margin-top: -80px;
             margin-left: 20px;
         }
@@ -52,6 +52,25 @@ export const CompraVendaInfo = styled.div`
             width: 740px;
             height: 500px;
             border-radius: 24px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        width: 80vw;
+        display: block;
+        margin-top: 140px;
+
+
+        & .image_container {
+            margin-top: 30px;
+            margin-right: 20px;
+
+            > img {
+                margin-top: 6px;
+                width: 70vw;
+                height: 36vh;
+            }
+
         }
     }
 `

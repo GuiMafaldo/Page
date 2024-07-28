@@ -3,25 +3,26 @@ import styled from "styled-components";
 export const ContainerContent =styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #d4a373;
+    background-color: #a3b18a;
     width: 70vw;
     height: 60vh;
     margin: 0 auto;
     margin-top: 100px;
 
     & .title-and-description {
-        margin-top: 20px;
-        margin-left: 30px;
+        margin-top: 10px;
+        margin-left: 60px;
 
          > h2 {
              color: #fff;
-            font-size: 42px;
-            font-family: Helvetica; 
+             font-size: 2em;
+             font-family: Helvetica; 
          }
 
          > p {
              font-family: Helvetica;
              color: #fff;
+             
          }
 
          > button {
@@ -33,21 +34,46 @@ export const ContainerContent =styled.div`
             font-family: Helvetica;
             font-size: 16px;
             font-weight: 700;
+            cursor: pointer;
          }
 
          > span {
             font-family: Helvetica;
-            margin-left: 30px; 
+            margin-left: 10px;
+            cursor: pointer;
          }
     }
 
     & .poltrona {
         margin-top: 120px;
+        margin-left: 80px;
         > img {
-            width: 18vw;
+            width: 14vw;
          
         }
     }
+
+    @media (max-width: 767px) {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & .title-and-description {
+
+            > h2 {
+                font-size: 30px; 
+            }
+        }
+
+        & .poltrona {
+                margin-top: 120px;
+
+                    > img {
+                        width: 30vw;
+         
+                    }
+            }
+}
 `
 
 
@@ -67,5 +93,9 @@ export const CarouselContent = styled.div`
             width: 600px;
             height: 552px;
         }
+    }
+
+    @media (max-width: 767px) {
+        display: none;
     }
 `

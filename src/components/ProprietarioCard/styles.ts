@@ -15,7 +15,7 @@ export const ContainerContent =styled.div`
 
          > h2 {
              color: #fff;
-            font-size: 42px;
+            font-size: 2em;
             font-family: Helvetica; 
          }
 
@@ -33,12 +33,14 @@ export const ContainerContent =styled.div`
             font-family: Helvetica;
             font-size: 16px;
             font-weight: 700;
+            cursor: pointer;
          }
 
          > span {
             font-family: Helvetica;
             margin-left: 30px;
             color: #fff;
+            cursor: pointer;
          }
     }
 
@@ -58,7 +60,7 @@ export const ContainerContent =styled.div`
 
 
         > h2 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             font-family: Helvetica;
             margin-left: 20px;
         }
@@ -72,6 +74,55 @@ export const ContainerContent =styled.div`
 
             img {
                 width: 100px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & .title-and-description {
+
+                > h2 {
+                    font-size: 30px; 
+                }
+
+                > p {
+                    font-size: 14px;
+                    width: 250px; 
+                }
+        }
+
+        & .phone {
+            margin-top: 100px;
+            margin-left: -200px;
+                    
+                > img {
+                    width: 180px;           
+                }
+            }
+
+            & .acordo { 
+                margin-top: 57px;
+                width: 80vw;
+                height: 30vh;
+                padding: 30px 0 70px 0;
+
+                > h2 {
+                    font-size: 30px; 
+                }
+
+
+            & .acordo-image {
+                margin: 0 auto;
+                width: 140px;
+
+                > img {
+                    margin-right: 50px; 
+                }
+                
             }
         }
     }

@@ -9,6 +9,10 @@ export const ContainerSearchsMost = styled.div`
     padding: 28px 20px;
     padding-bottom: 60px;
 
+    @media (max-width: 767px) {
+        width: 80vw;
+    }
+
 `
 
 export const ContentMost = styled.div`
@@ -42,4 +46,26 @@ export const ContentMost = styled.div`
             }
         }
     }
+
+    @media (max-width: 767px) {
+        width: 77vw;
+
+        > h2 {
+            font-size: 1.4em;
+            margin: 0; 
+        }
+
+        & .content-most {
+            margin: 0;
+            margin-top: -10px;
+
+            > span {
+                > li {
+                    font-size: 13px;
+                    width: 90px;
+            }
+        }
+
+}
+
 `

@@ -20,11 +20,11 @@ const CardProprietario = () => {
                     <button>Ver apartamentos para alugar</button> <br />
                     <span>Como alugar no "name here"</span>
                 </div>
-                <div className='poltrona'>
+                <div className='phone'>
                     <img src="./assets/phone.webp" alt="" />
                 </div>
                 <div className='acordo'>
-                    <h2>Fechamos um <br /> acordo de aluguel a cada 4</h2>
+                    <h2>Fechamos um <br /> acordo de aluguel a cada 4 minutos</h2>
                     <div className='acordo-image'>
                         <img src="./assets/acordo.png" alt="" />
                         <img src="./assets/contrato.png" alt="" />

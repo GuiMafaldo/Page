@@ -1,14 +1,24 @@
+import { useState } from "react"
 import { ContentState, StatesContainer } from "./styles"
 
 const ContentStates = () => {
+    const [btnAlugar , setBtnAlugar] = useState(false)
     return(
         <>
             <StatesContainer>
             <div className="title-and-button">
                 <h2>Onde você quiser, tem um quinto andar</h2>
                 <div>
-                    <button className="active button-btn">Alugar</button>
-                    <button className="button-btn">Comprar</button>
+                    <button 
+                        className={`button-btn ${btnAlugar? 'active': ""}`}
+                        onClick={() => setBtnAlugar(!btnAlugar) }>
+                            Alugar
+                    </button>
+                    <button 
+                        className={`button-btn ${btnAlugar? '': "active"}`}
+                        onClick={() => setBtnAlugar(!btnAlugar) }>
+                            Comprar
+                    </button>
                 </div>
             </div>
         </StatesContainer>

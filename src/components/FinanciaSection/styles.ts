@@ -15,7 +15,7 @@ export const ContainerContent =styled.div`
 
          > h2 {
              color: #fff;
-             font-size: 40px;
+             font-size: 2em;
              font-family: Helvetica; 
          }
 
@@ -34,11 +34,13 @@ export const ContainerContent =styled.div`
             font-family: Helvetica;
             font-size: 16px;
             font-weight: 700;
+            cursor: pointer;
          }
 
          > span {
             font-family: Helvetica;
-            margin-left: 10px; 
+            margin-left: 10px;
+            cursor: pointer; 
          }
     }
 
@@ -49,6 +51,28 @@ export const ContainerContent =styled.div`
             width: 14vw;
          
         }
+    }
+
+    @media (max-width: 767px) {
+        width: 80vw;
+        display: gird;
+        grid-template-columns: 1fr 1fr;
+
+        & .title-and-description {
+
+            > h2 {
+                font-size: 30px; 
+            }
+        }
+
+        & .poltrona {
+                margin-top: 120px;
+
+                    > img {
+                        width: 30vw;
+         
+                    }
+            }
     }
 `
 
@@ -69,5 +93,9 @@ export const CarouselContent = styled.div`
             width: 600px;
             height: 552px;
         }
+    }
+
+    @media(max-width: 767px) {
+        display: none;
     }
 `

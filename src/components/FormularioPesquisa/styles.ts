@@ -5,7 +5,7 @@ export const FormSearch = styled.div`
     max-width: 1024px;
     width: 100vw;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 160px;
 `
 export const FormContent = styled.form`
     display: flex;
@@ -35,5 +35,7 @@ export const FormContent = styled.form`
         padding: 7px;
         border: 1px solid #000;
         border-radius: 8px;
+        gap: 30px;
+        cursor: pointer;
      }
 `

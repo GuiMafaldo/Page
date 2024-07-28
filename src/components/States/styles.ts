@@ -36,8 +36,14 @@ export const StatesContainer = styled.div`
                 font-family: Helvetica;
                 border: none;
                 border-radius: 20px;
+                cursor: pointer;
             } 
         }
+    }
+
+    @media (max-width: 767px){
+        width: 70vw;
+        margin-top: 400px;
     }
 `
 
@@ -70,4 +76,27 @@ export const ContentState = styled.div`
                 } 
             }
         }
+
+        @media (max-width: 767px){
+            width: 80vw;
+
+            & .content-links {
+
+                > h3 {
+                    font-size: 1.2em; 
+                }
+
+                > div {
+                width: 13vw;
+                
+                > li {
+                    font-family: Helvetica;
+                    font-size: 13px;
+                    list-style: none;
+                    margin-bottom: 30px;
+                    cursor: pointer;
+                } 
+            }
+        }
+    }
 `

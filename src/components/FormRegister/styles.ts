@@ -35,6 +35,7 @@ export const ContainerFormulario = styled.div`
             color: #000;
             font-family: Helvetica;
             font-weight: 700;
+            cursor: pointer;
         }
      }
 
@@ -51,9 +52,23 @@ export const ContainerFormulario = styled.div`
         > p, span {
             font-family: Helvetica;
             font-weight: 600;
-            font-size: 14px; 
+            font-size: 14px;
+            cursor: pointer; 
         }
+
+        @media (max-width: 767px){
+            width: 57vw;
+            margin-left: -28px;
+            margin-top: -20px;
+
+      }
      }
+
+      @media (max-width: 767px){
+        width: 100vw;
+        padding: 30px;
+
+      }
 
 `
 export const ContentForm = styled.form`
@@ -105,4 +120,9 @@ export const ContentForm = styled.form`
         border: none;
         border-radius: 20px;
     }
+
+    @media (max-width: 767px){
+    
+
+      }
 `

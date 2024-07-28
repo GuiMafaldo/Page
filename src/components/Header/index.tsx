@@ -4,9 +4,13 @@ const HeaderPage = () => {
     return (
         <ContainerHeader>
             <ContentHeader>
-                <img src="http://via.placeholder.com/70x70"/>
-                <h1>Quinto andar Clone</h1>
+                <img src="./assets/logo2.png"/>
+                <h1>Consultoria Imobiliaria</h1>
             </ContentHeader>
+            <div>
+                <button>Inicio</button>
+                <button>Entrar</button>
+            </div>
         </ContainerHeader>
     )
 }

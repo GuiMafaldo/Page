@@ -1,14 +1,25 @@
 import { ContainerFormulario, ContentForm } from "./styles"
 
 import cama from '../../../public/assets/room.png'
+import { useState } from "react"
 
 const FormularioCadastro = () => {
+    const [btnAlugar, setBtnAlugar] = useState(false)
+
     return(
         <ContainerFormulario>
             <h2>Encontre um lar para chamar de seu</h2>
             <div>
-                <button className="button-btn active">Alugar</button>
-                <button className="button-btn">Comprar</button>
+                <button 
+                    className={`button-btn ${btnAlugar? 'active': ""}`}
+                    onClick={() => setBtnAlugar(!btnAlugar) }
+                    >
+                        Alugar
+                </button>
+                <button className={`button-btn ${btnAlugar? '': "active"}`}
+                    onClick={() => setBtnAlugar(!btnAlugar) }>
+                        Comprar
+                </button>
             </div>
             <ContentForm>
                 <input type="text" placeholder="Digite seu nome:" />
