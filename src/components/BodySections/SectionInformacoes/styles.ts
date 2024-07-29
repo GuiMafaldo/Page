@@ -60,6 +60,12 @@ export const CompraVendaInfo = styled.div`
         display: block;
         margin-top: 140px;
 
+         & .title_and_description {
+            > h2 {
+                padding-top: 40px; 
+            }
+         }
+
 
         & .image_container {
             margin-top: 30px;

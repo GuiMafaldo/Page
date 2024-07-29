@@ -44,6 +44,14 @@ export const StatesContainer = styled.div`
     @media (max-width: 767px){
         width: 70vw;
         margin-top: 400px;
+
+        & .title-and-button{
+
+            > h2 {
+                font-size: 1.8em;
+                margin-bottom: 40px;
+            }
+        }
     }
 
     @media(min-width: 768px) and (max-width: 1024px) {
@@ -96,7 +104,7 @@ export const ContentState = styled.div`
             & .content-links {
 
                 > h3 {
-                    font-size: 1.2em; 
+                    font-size: 1.3em; 
                 }
 
                 > div {

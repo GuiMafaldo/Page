@@ -41,6 +41,7 @@ export const ContainerContent =styled.div`
             font-family: Helvetica;
             margin-left: 10px;
             cursor: pointer;
+            color: #fff;
          }
     }
 
@@ -63,6 +64,10 @@ export const ContainerContent =styled.div`
             > h2 {
                 font-size: 30px; 
             }
+
+            > span {
+                color: #fff; 
+            }
         }
 
         & .poltrona {
@@ -84,6 +89,9 @@ export const ContainerContent =styled.div`
 
             > h2 {
                 font-size: 1.6em; 
+            }
+            > span {
+                color: #fff; 
             }
 
             > p {

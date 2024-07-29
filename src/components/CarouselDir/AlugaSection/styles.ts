@@ -20,8 +20,8 @@ export const ContainerContent =styled.div`
          }
 
          > p {
-             font-family: Helvetica;
-             color: #fff;
+            font-family: Helvetica;
+            color: #fff;
          }
 
          > button {
@@ -40,6 +40,7 @@ export const ContainerContent =styled.div`
             font-family: Helvetica;
             margin-left: 30px;
             cursor: pointer; 
+            color: #fff;
          }
     }
 
@@ -60,6 +61,10 @@ export const ContainerContent =styled.div`
 
             > h2 {
                 font-size: 30px; 
+            }
+
+            > span{
+                color: #fff; 
             }
         }
 
@@ -85,7 +90,8 @@ export const ContainerContent =styled.div`
             }
 
             > p {
-                font-size: 14px; 
+                font-size: 14px;
+                color: #fff;
             }
 
             > button {
@@ -101,6 +107,7 @@ export const ContainerContent =styled.div`
             > span {
                 font-size: 14px;
                 margin: 0 auto;
+                color: #fff;
             }
         }
 

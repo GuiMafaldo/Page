@@ -5,7 +5,7 @@ export const ContainerFooterPage = styled.div`
     margin-top: 100px;
     height: 70vh;
     padding: 60px;
-    padding-bottom:110px;
+    padding-bottom: 110px;
     
 
     > span {
@@ -17,8 +17,8 @@ export const ContainerFooterPage = styled.div`
     }
 
     @media(min-width: 768px) and (max-width: 1024px) {
-        width: 100vw;
-        padding-bottom: 110px;    
+        width: 89vw;
+        padding-bottom: 130px;    
 }
 
 `
@@ -141,65 +141,68 @@ export const SectionAbout = styled.section`
 `
 export const TermsPolitcContent = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70vw;
+    flex-direction: row;
+    gap: 10px;
+    width: 80vw;
+    padding: 80px 0 140px 0;
     margin: 0 auto;
-    padding: 120px;
-
-    > li {
-        margin-right: -16px;
-        list-style: none;
-        text-decoration: underline;
-        cursor: pointer; 
-    }
-
-    > img {
-        width: 30px;
-        cursor: pointer; 
-    }
 
     > div {
-            display: flex;
-            margin-right: 20px;
+        display: flex;
+        margin: 0 auto;
+        margin-right: 20px;
+        gap: 30px;
+        > li {
+            margin-right: -16px;
+            list-style: none;
+            text-decoration: underline;
+            cursor: pointer; 
+        }
+    }
+
+    & .logotipo {
+        width: 30vw;
+        display: flex;
+        margin: 0 auto;
             img {
                 width: 30px;
                 margin-right: 6px;
                 cursor: pointer;
-            } 
+            }
+        }
         
 
-    @media(min-width: 360px) and (max-width: 767px){
+    @media(max-width: 767px){
         display: flex;
-        margin-left: -140px;
+        flex-direction: column;
+        text-align: left;
+        width: 80vw;
 
-        width: 90vw;
-        
-        > li {
-            font-size: 10px;
-            line-height: 10px;
-            margin-right: 10px;
-        }
+        & .logos {
+                img{
+                    width 20px;
+                }
+            }
 
-        > img {
-            width: 20px;
-            margin-right: 10px; 
-        }
+
         > div {
-            display: flex;
-            margin-right: 20px;
-            img {
-                width: 20px;
-                margin-right: 6px;
-            } 
+            width: 100vw;
+            padding-top: 10px;
+            gap: 24px;
+            margin-left: -16px;
+                > li {
+                    font-size: 14px;
+                    list-style: none;
+                    margin-bottom: 20px;
+                }
         }
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
-        width: 100vw;
+        width: 80vw;
         display: flex;
         flex-wrap: wrap;
-        margin-left: -140px;
+        margin: 0 auto;
 
         > li {
             font-size: 12px; 
@@ -212,11 +215,15 @@ export const TermsPolitcContent = styled.div`
         }
 
         > div {
-            margin-right: 80px;
-                img {
-                    width: 26px;
-                    margin-right: 6px;
-                } 
+            width: 80vw;
+            padding-top: 10px;
+            gap: 30px;
+            margin: 0 auto;
+                > li {
+                    font-size: 16px;
+                    list-style: none;
+                    margin-bottom: 20px;
+            }
         }
     }
 `
@@ -258,8 +265,9 @@ export const LastItmsPage = styled.div`
         }
     }
 
-    @media(min-width: 360px) and (max-width: 767px){
+    @media(max-width: 767px){
         width: 90vw;
+        margin-top: -40px;
         padding-bottom: 10px;
 
         & .creci {
@@ -293,6 +301,7 @@ export const LastItmsPage = styled.div`
 
     @media(min-width: 768px) and (max-width: 1024px) {
         width: 100vw;
+        margin-top: -80px;
 
         & .creci {
             & .ver-todos {

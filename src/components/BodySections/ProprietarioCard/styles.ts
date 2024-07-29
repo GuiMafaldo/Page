@@ -94,16 +94,16 @@ export const ContainerContent =styled.div`
                     font-size: 14px;
                     width: 250px; 
                 }
-            }
+        }
 
         & .phone {
-            margin-top: 100px;
-            margin-left: -200px;
-                    
+            margin: 0 auto;  
                 > img {
-                    width: 180px;           
+                    width: 30vw;
+                    margin-left: -280px;          
             }
         }
+        
 
             & .acordo { 
                 margin-top: 57px;
@@ -127,11 +127,11 @@ export const ContainerContent =styled.div`
             }
     }
 
-    @media(min-width: 768px) and (max-width: 1024px) {
+    @media (max-width: 1024px) {
         width: 80vw;
 
         & .phone {
-            margin-top: 120px;
+            margin-top: 100px;
             margin-left: 30px;
         }
 
@@ -141,7 +141,7 @@ export const ContainerContent =styled.div`
                 font-size: 1.6em; 
             }
 
-            > p {
+            > p, span {
                 font-size: 14px;
             }
         }

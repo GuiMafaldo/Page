@@ -45,17 +45,14 @@ const ContainerFooter = () => {
                 </div>
             </SectionAbout>
             <TermsPolitcContent>
-                    <li>Politica de privacidade</li>
-                    <img src="./assets/seta.png" alt="" />
-                    <li>Termos e condições de uso</li>
-                    <img src="./assets/seta.png" alt="" />
-                    <li>Política de Cookies</li>
-                    <img src="./assets/seta.png" alt="" />
-                    <li>Preferencias de Cookies</li>
-                    <img src="./assets/seta.png" alt="" />
-                    <li>Manual do usuarío</li>
-                    <img src="./assets/seta.png" alt="" />
                     <div>
+                        <li>Politica de privacidade</li>
+                        <li>Termos e condições de uso</li>    
+                        <li>Política de Cookies</li>  
+                        <li>Preferencias de Cookies</li> 
+                        <li>Manual do usuarío</li> 
+                    </div>
+                    <div className="logotipo">
                         <img src="./assets/face.svg"/>
                         <img src="./assets/insta.svg"/>
                         <img src="./assets/x.svg"/>

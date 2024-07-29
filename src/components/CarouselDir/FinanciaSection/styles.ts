@@ -41,6 +41,7 @@ export const ContainerContent =styled.div`
             font-family: Helvetica;
             margin-left: 10px;
             cursor: pointer; 
+            color: #fff;
          }
     }
 
@@ -62,6 +63,10 @@ export const ContainerContent =styled.div`
 
             > h2 {
                 font-size: 30px; 
+            }
+
+            > span {
+                color: #fff; 
             }
         }
 
@@ -104,6 +109,7 @@ export const ContainerContent =styled.div`
             > span {
                 font-size: 14px;
                 margin: 0 auto;
+                color: #fff;
             }
         }
 
