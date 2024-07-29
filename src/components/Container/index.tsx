@@ -1,15 +1,15 @@
-import CardProprietario from "../ProprietarioCard"
-import CarouselAluguel from "../AlugaSection"
-import CarouselCompra from "../CompraSection"
-import CarouselFinancia from "../FinanciaSection"
+import CardProprietario from "../BodySections/ProprietarioCard"
+import CarouselCompra from "../CarouselDir/CompraSection"
 import ContainerFooter from "../FooterPage"
-import FormularioCadastro from "../FormRegister"
+import FormularioCadastro from "../Forms/FormRegister"
 import HeaderPage from "../Header"
-import SearchContent from "../FormularioPesquisa"
-import MostPolularesSearchs from "../Populares"
-import InfoCompraVenda from "../SectionInformacoes"
-import ContentStates from "../States"
+import SearchContent from "../Forms/FormularioPesquisa"
+import MostPolularesSearchs from "../BodySections/Populares"
+import InfoCompraVenda from "../BodySections/SectionInformacoes"
+import ContentStates from "../BodySections/States"
 import { ContentFlex } from "./styles"
+import CarouselFinancia from "../CarouselDir/FinanciaSection"
+import CarouselAlugel from "../CarouselDir/AlugaSection"
 
 const ContainerCompo = () =>{
     return(
@@ -20,7 +20,7 @@ const ContainerCompo = () =>{
             <FormularioCadastro />
             </ContentFlex>
             <InfoCompraVenda />
-            <CarouselAluguel />
+            <CarouselAlugel />
             <CarouselCompra />
             <CarouselFinancia />
             <CardProprietario />

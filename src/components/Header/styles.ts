@@ -7,7 +7,8 @@ export const ContainerHeader = styled.div`
     align-items: center;
     margin: 0 auto;
     margin-top: -160px;
-    width: 100vw;
+    width: 98vw;
+    padding: 2px;
     position: fixed;
     z-index: 1;
 
@@ -40,8 +41,24 @@ export const ContainerHeader = styled.div`
 
 
         > div {
+            margin-left: 40px;
             > button {
                 display: none; 
+            } 
+        }
+   }
+
+   @media (min-width: 768px)and (max-width: 1024px) {
+        width: 100vw;
+        display: flex;
+
+
+        > div {
+            display: flex;
+            margin-left: 40px;
+
+            > button {
+                margin-right: 10px;
             } 
         }
    }
@@ -71,5 +88,11 @@ export const ContentHeader = styled.div`
         text-align: center;
         
    }
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100vw;
+        display: flex;
+        gap: 24px;
+        text-align: center;
+        
+   }
 `

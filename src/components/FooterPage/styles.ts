@@ -5,16 +5,21 @@ export const ContainerFooterPage = styled.div`
     margin-top: 100px;
     height: 70vh;
     padding: 60px;
-    padding-bottom: 80px;
+    padding-bottom:110px;
     
 
     > span {
         margin-left: 214px;
     }
-        @media(max-width: 767px){
-            width: 82vw;
-            padding-bottom: 110px;
-        }
+    @media(max-width: 767px){
+        width: 82vw;
+        padding-bottom: 110px;
+    }
+
+    @media(min-width: 768px) and (max-width: 1024px) {
+        width: 100vw;
+        padding-bottom: 110px;    
+}
 
 `
 export const SectionAbout = styled.section`
@@ -30,12 +35,13 @@ export const SectionAbout = styled.section`
 
         > h4 {
             font-family: Helvetica;
+            font-size: 22px;
             margin-bottom: -1px;
         }
 
         > span {
             font-family: Helvetica;
-            font-size: 13p4;
+            font-size: 18px;
         }
     }
 
@@ -99,6 +105,39 @@ export const SectionAbout = styled.section`
                 display: none;
             }
         }
+
+        @media(min-width: 768px) and (max-width: 1024px) {
+            width: 100vw;
+
+            .about {
+                width: 90vw;
+
+                > h4 {
+                    font-size: 18px; 
+                }
+
+                > span {
+                     font-size: 14px; 
+                }
+            }
+
+            & .about-card {
+                width: 60vw;
+                height: 25vh;
+                margin-top: 25px;
+                margin-right: 100px;
+
+                > h4 {
+                    margin-top: -10px;
+                    font-size: 16px;
+                }
+
+                > span {
+                    font-size: 13px; 
+                }
+            }
+
+        }
 `
 export const TermsPolitcContent = styled.div`
     display: flex;
@@ -120,20 +159,64 @@ export const TermsPolitcContent = styled.div`
         cursor: pointer; 
     }
 
-    @media(max-width: 767px){
+    > div {
+            display: flex;
+            margin-right: 20px;
+            img {
+                width: 30px;
+                margin-right: 6px;
+                cursor: pointer;
+            } 
+        
+
+    @media(min-width: 360px) and (max-width: 767px){
         display: flex;
         margin-left: -140px;
 
         width: 90vw;
         
         > li {
-            font-size: 12px;
+            font-size: 10px;
+            line-height: 10px;
             margin-right: 10px;
         }
 
         > img {
             width: 20px;
             margin-right: 10px; 
+        }
+        > div {
+            display: flex;
+            margin-right: 20px;
+            img {
+                width: 20px;
+                margin-right: 6px;
+            } 
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -140px;
+
+        > li {
+            font-size: 12px; 
+        }
+
+        > img {
+            width: 18px;
+            height: 22px;
+            margin-right: 16px; 
+        }
+
+        > div {
+            margin-right: 80px;
+                img {
+                    width: 26px;
+                    margin-right: 6px;
+                } 
         }
     }
 `
@@ -175,7 +258,7 @@ export const LastItmsPage = styled.div`
         }
     }
 
-    @media (max-width: 767px){
+    @media(min-width: 360px) and (max-width: 767px){
         width: 90vw;
         padding-bottom: 10px;
 
@@ -201,10 +284,42 @@ export const LastItmsPage = styled.div`
             display: flex;
             margin-right: 30px;
 
-        > img {
-            cursor: pointer;
-            height: 30px; 
+            > img {
+                cursor: pointer;
+                height: 30px; 
+            }
         }
     }
-}
+
+    @media(min-width: 768px) and (max-width: 1024px) {
+        width: 100vw;
+
+        & .creci {
+            & .ver-todos {
+                text-decoration: underline;
+                cursor:pointer;
+            }
+            > p {
+                font-family: Helvetica; 
+                font-size: 14px;
+            }
+
+            > img {
+                width: 20px;
+                height: 26px;
+                margin-left: -40px;
+                cursor:pointer;
+            }
+        }
+
+            & .images {
+                display: flex;
+                margin-right: 130px;
+
+                > img {
+                    cursor: pointer;
+                    height: 30px; 
+                }
+            }
+    }
 `

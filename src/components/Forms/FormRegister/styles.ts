@@ -62,6 +62,12 @@ export const ContainerFormulario = styled.div`
             margin-top: -20px;
 
       }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 37vw;
+        margin-top: -20px;
+        
+    }
      }
 
       @media (max-width: 767px){
@@ -69,6 +75,12 @@ export const ContainerFormulario = styled.div`
         padding: 30px;
 
       }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin-top: 120px;
+        padding-bottom: 30px;
+        
+    }
 
 `
 export const ContentForm = styled.form`

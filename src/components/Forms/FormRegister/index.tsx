@@ -1,7 +1,6 @@
 import { ContainerFormulario, ContentForm } from "./styles"
-
-import cama from '../../../public/assets/room.png'
 import { useState } from "react"
+
 
 const FormularioCadastro = () => {
     const [btnAlugar, setBtnAlugar] = useState(false)

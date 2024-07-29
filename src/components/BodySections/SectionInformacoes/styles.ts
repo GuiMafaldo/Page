@@ -73,4 +73,42 @@ export const CompraVendaInfo = styled.div`
 
         }
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 80vw;
+        display: block;
+        margin-top: 140px;
+
+        & .title_and_description {
+            
+            > h2 {
+                font-size: 1.6em;
+                padding: 20px; 
+            }
+
+            > p {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            > button {
+                margin-top: -3px; 
+            }
+
+        }
+
+        & .image_container {
+                display: flex;
+                margin: 0 auto;
+                margin-top: 30px;
+                height: 40vh;
+                width: 60vw;
+
+            > img {
+                width: 60vw;
+                height: 40vh;
+            }
+
+        }
+    }
 `

@@ -12,6 +12,10 @@ export const ContainerSearchsMost = styled.div`
     @media (max-width: 767px) {
         width: 80vw;
     }
+    
+    @media(min-width: 768px) and (max-width: 1024px) {
+        width: 80vw;
+    }
 
 `
 
@@ -29,7 +33,7 @@ export const ContentMost = styled.div`
         font-size: 2.3em;
     }
 
-    & .content-most {
+    & .content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 60vw;
@@ -46,6 +50,32 @@ export const ContentMost = styled.div`
             }
         }
     }
+    
+    @media(min-width: 767px) and (max-width: 1024px) {
+        width: 78vw;
+        margin-top: -2px;
+            
+           > h2 {
+                margin-top: -10px;
+                font-size: 1.8em;
+            }
+        
+        
+            & .content {
+            width: 80vw;
+            gap: 10px;
+                margin: 0 auto;
+
+                > span {
+                     > li {
+                        font-size: 13px; 
+                     } 
+                }
+            }
+        }
+
+    
+
 
     @media (max-width: 767px) {
         width: 77vw;
@@ -55,7 +85,7 @@ export const ContentMost = styled.div`
             margin: 0; 
         }
 
-        & .content-most {
+        & .content {
             margin: 0;
             margin-top: -10px;
 
@@ -65,7 +95,5 @@ export const ContentMost = styled.div`
                     width: 90px;
             }
         }
-
-}
-
+    }
 `

@@ -73,7 +73,49 @@ export const ContainerContent =styled.div`
          
                     }
             }
-}
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+             width: 80vw;
+            display: flex;
+
+
+            & .title-and-description {
+
+            > h2 {
+                font-size: 1.6em; 
+            }
+
+            > p {
+                font-size: 14px;
+                margin-bottom: 70px;
+            }
+
+            > button {
+                width: 200px;
+                height: 30px;
+                font-size: 13px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+            }
+
+            > span {
+                font-size: 14px;
+                margin: 0 auto;
+            }
+        }
+
+        & .poltrona {
+                margin-top: 100px;
+                margin-right: 0;
+
+                    > img {
+                        width: 25vw;
+         
+                    }
+            }
+        }
 `
 
 
@@ -97,5 +139,9 @@ export const CarouselContent = styled.div`
 
     @media (max-width: 767px) {
         display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+            display: none;
     }
 `

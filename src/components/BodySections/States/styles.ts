@@ -45,6 +45,19 @@ export const StatesContainer = styled.div`
         width: 70vw;
         margin-top: 400px;
     }
+
+    @media(min-width: 768px) and (max-width: 1024px) {
+        width: 80vw;
+        margin-top: 80px;
+
+        & .title-and-button{
+
+            > h2 {
+                font-size: 1.8em;
+                margin-bottom: 40px;
+            }
+        }
+    }
 `
 
 export const ContentState = styled.div`
@@ -98,5 +111,34 @@ export const ContentState = styled.div`
                 } 
             }
         }
+    }
+
+     @media(min-width: 768px) and (max-width: 1024px) {
+        width: 80vw;
+        margin-top: 20px;
+
+        & .content-links {
+
+            > h3 {
+                font-family: Helvetica;
+                font-size: 1.3em;
+                color: #669bbc;
+                margin-bottom: 30px;
+            }
+
+            > div {
+                width: 13vw;
+                
+                > li {
+                    font-family: Helvetica;
+                    font-size: 14px;
+                    line-height: 16px;
+                    list-style: none;
+                    margin-bottom: 30px;
+                    cursor: pointer;
+                } 
+            }
+        }
+
     }
 `

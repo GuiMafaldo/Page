@@ -3,21 +3,25 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import {  CarouselContent, ContainerContent } from './styles'
+import { NextButton, PreviousButton } from '../../../utils/buttonsCarousel/buttons'
+import { StyledSlider } from '../../../utils/buttonsCarousel/styles'
 
 const CarouselCompra = () => {
     const settings = {
-        dots: false,
+        dots: true,
         infinity: true,
         speed: 900,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000
+        autoplay: false,
+        autoplaySpeed: 4000,
+        nextArrow: <NextButton />,
+        prevArrow: <PreviousButton />
     }
     return(
             <ContainerContent>
                 <CarouselContent className="carousel-container">
-                    <Slider {...settings} >
+                    <StyledSlider {...settings} >
                         <div className='content-image'>
                             <img src="./assets/home.jpg" alt="" />
                         </div>
@@ -28,7 +32,7 @@ const CarouselCompra = () => {
                         <div className='content-image'>
                             <img src="./assets/interior.jpg" alt="" />
                         </div>
-                    </Slider>
+                    </StyledSlider>
                 </CarouselContent>
                 <div className='title-and-description'>
                     <h2>Comprar seu <br />

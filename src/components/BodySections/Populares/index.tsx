@@ -5,7 +5,7 @@ const MostPolularesSearchs = () => {
         <ContainerSearchsMost>
             <ContentMost>
                 <h2>Buscas mais populares</h2>
-                <div className="content-most">
+                <div className="content">
                     <span>
                         <li>Apartamento à venda em Diadema</li>
                         <li>Apartamento à venda em Taboão da Serra</li>

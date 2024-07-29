@@ -7,7 +7,7 @@ const ContentStates = () => {
         <>
             <StatesContainer>
             <div className="title-and-button">
-                <h2>Onde você quiser, tem um quinto andar</h2>
+                <h2>Onde você quiser, tem um AP pela JF faustino!</h2>
                 <div>
                     <button 
                         className={`button-btn ${btnAlugar? 'active': ""}`}

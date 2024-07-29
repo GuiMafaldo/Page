@@ -55,11 +55,13 @@ const ContainerFooter = () => {
                     <img src="./assets/seta.png" alt="" />
                     <li>Manual do usuarío</li>
                     <img src="./assets/seta.png" alt="" />
-                    <img src="./assets/face.svg"/>
-                    <img src="./assets/insta.svg"/>
-                    <img src="./assets/x.svg"/>
-                    <img src="./assets/linkedin.svg"/>
-                    <img src="./assets/gmail.svg"/>
+                    <div>
+                        <img src="./assets/face.svg"/>
+                        <img src="./assets/insta.svg"/>
+                        <img src="./assets/x.svg"/>
+                        <img src="./assets/linkedin.svg"/>
+                        <img src="./assets/gmail.svg"/>
+                    </div>
             </TermsPolitcContent>
             <LastItmsPage>
                 <div className="creci">
