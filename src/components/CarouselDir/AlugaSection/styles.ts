@@ -52,15 +52,16 @@ export const ContainerContent =styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 80vw;
+    @media(min-width: 340px) and  (max-width: 767px) {
+        width: 800px;
+        margin-left: 46px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-
+        grid-template-columns: 1fr 1fr;       
+    
         & .title-and-description {
 
             > h2 {
-                font-size: 30px; 
+                font-size: 1.5em; 
             }
 
             > span{
@@ -72,7 +73,7 @@ export const ContainerContent =styled.div`
                 margin-top: 120px;
 
                     > img {
-                        width: 40vw;
+                        width: 80vw;
          
                     }
             }
@@ -137,7 +138,7 @@ export const CarouselContent = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
+    @media(min-width: 340px) and  (max-width: 767px) {
         display: none;
     }
 

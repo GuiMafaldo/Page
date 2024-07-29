@@ -55,14 +55,21 @@ export const CompraVendaInfo = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 80vw;
-        display: block;
+    @media (min-width: 340px) and (max-width: 767px) {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
         margin-top: 140px;
+        margin-left: 47px;
 
          & .title_and_description {
             > h2 {
-                padding-top: 40px; 
+                font-size: 1.3em;
+                padding-top: 140px; 
+            }
+
+            > p {
+                margin-bottom: -40px; 
             }
          }
 
@@ -73,7 +80,7 @@ export const CompraVendaInfo = styled.div`
 
             > img {
                 margin-top: 6px;
-                width: 70vw;
+                width: 100%;
                 height: 36vh;
             }
 

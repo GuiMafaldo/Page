@@ -9,8 +9,9 @@ export const ContainerSearchsMost = styled.div`
     padding: 28px 20px;
     padding-bottom: 60px;
 
-    @media (max-width: 767px) {
-        width: 80vw;
+    @media(min-width: 340px) and (max-width: 767px) {
+        width: 800px;
+        margin-left: 40px;
     }
     
     @media(min-width: 768px) and (max-width: 1024px) {
@@ -50,8 +51,29 @@ export const ContentMost = styled.div`
             }
         }
     }
+
+    @media(min-width: 340px) and (max-width: 767px){
+        width: 780px;
+
+        > h2 {
+            margin-top: -8px;
+            font-size: 1.8em; 
+        }
+
+         & .content {
+            width: 780px;
+            gap: 10px;
+                margin: 0 auto;
+
+                > span {
+                     > li {
+                        font-size: 13px; 
+                     } 
+                }
+            }
+    }
     
-    @media(min-width: 767px) and (max-width: 1024px) {
+    @media(min-width: 768px) and (max-width: 1024px) {
         width: 78vw;
         margin-top: -2px;
             
@@ -77,7 +99,7 @@ export const ContentMost = styled.div`
     
 
 
-    @media (max-width: 767px) {
+    @media(min-width: 360px) and (max-width: 767px) {
         width: 77vw;
 
         > h2 {

@@ -6,6 +6,13 @@ export const FormSearch = styled.div`
     width: 100vw;
     margin: 0 auto;
     margin-top: 160px;
+
+    @media(min-width: 340px) and (max-width: 767px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 140px;
+    }
 `
 export const FormContent = styled.form`
     display: flex;

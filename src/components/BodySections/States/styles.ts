@@ -41,14 +41,15 @@ export const StatesContainer = styled.div`
         }
     }
 
-    @media (max-width: 767px){
-        width: 70vw;
+    @media(min-width: 340px) and  (max-width: 767px){
+        width: 100%;
+        margin-left: 150px;
         margin-top: 400px;
 
         & .title-and-button{
 
             > h2 {
-                font-size: 1.8em;
+                font-size: 1.5em;
                 margin-bottom: 40px;
             }
         }
@@ -98,28 +99,28 @@ export const ContentState = styled.div`
             }
         }
 
-        @media (max-width: 767px){
-            width: 80vw;
+        @media (min-width: 340px) and  (max-width: 767px){
+            width: 600px;
+            margin-left: 150px;
 
             & .content-links {
 
                 > h3 {
-                    font-size: 1.3em; 
+                    font-size: 1.5em; 
                 }
 
                 > div {
-                width: 13vw;
-                
-                > li {
-                    font-family: Helvetica;
-                    font-size: 13px;
-                    list-style: none;
-                    margin-bottom: 30px;
-                    cursor: pointer;
-                } 
+                    width: 100%;
+                    > li {
+                        font-family: Helvetica;
+                        font-size: 12px;
+                        list-style: none;
+                        margin-bottom: 30px;
+                        cursor: pointer;
+                    } 
+                }
             }
         }
-    }
 
      @media(min-width: 768px) and (max-width: 1024px) {
         width: 80vw;

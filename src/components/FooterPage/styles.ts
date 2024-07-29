@@ -11,8 +11,8 @@ export const ContainerFooterPage = styled.div`
     > span {
         margin-left: 214px;
     }
-    @media(max-width: 767px){
-        width: 82vw;
+    @media(min-width: 340px) and (max-width: 767px){
+        width: 790px;
         padding-bottom: 110px;
     }
 
@@ -79,8 +79,9 @@ export const SectionAbout = styled.section`
             }     
     }
 
-     @media(max-width: 767px){
-            width: 100vw;
+     @media(min-width: 340px) and (max-width: 767px){
+            width: 100%;
+            margin-left: 50px;
 
             & .about{
                 width: 90vw;
@@ -161,9 +162,9 @@ export const TermsPolitcContent = styled.div`
     }
 
     & .logotipo {
-        width: 30vw;
+        width: 100%;
         display: flex;
-        margin: 0 auto;
+        margin-left: 250px;
             img {
                 width: 30px;
                 margin-right: 6px;
@@ -172,11 +173,11 @@ export const TermsPolitcContent = styled.div`
         }
         
 
-    @media(max-width: 767px){
+    @media(min-width: 340px) and (max-width: 767px){
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 80vw;
+        width: 800px;
 
         & .logos {
                 img{
@@ -186,10 +187,10 @@ export const TermsPolitcContent = styled.div`
 
 
         > div {
-            width: 100vw;
+            width: 100%;
             padding-top: 10px;
-            gap: 24px;
-            margin-left: -16px;
+            gap: 30px;
+            margin-left: 40px;
                 > li {
                     font-size: 14px;
                     list-style: none;
@@ -265,8 +266,8 @@ export const LastItmsPage = styled.div`
         }
     }
 
-    @media(max-width: 767px){
-        width: 90vw;
+    @media(min-width: 340px) and (max-width: 767px){
+        width: 790px;
         margin-top: -40px;
         padding-bottom: 10px;
 

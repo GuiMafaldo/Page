@@ -56,25 +56,26 @@ export const ContainerFormulario = styled.div`
             cursor: pointer; 
         }
 
-        @media(max-width: 767px) {
-            padding: 30px;
-            height: 30px;
+        @media(min-width: 340px) and (max-width: 767px) {
+            width: 409px;
+            padding: 16px;
             margin-left: -30px;
+            margin-top: -20px;
         }
 
-        @media(max-width: 1024px) {
+        @media(min-width: 768px) and (max-width: 1024px) {
             width: 100%;
             margin-top: -20px;
         }
     }
 
-      @media (max-width: 767px){
+      @media(min-width: 340px) and  (max-width: 767px){
         width: 100%;
         padding: 30px;
 
       }
 
-      @media (max-width: 1024px) {
+      @media(min-width: 768px) and  (max-width: 1024px) {
         margin-top: 120px;
         padding-bottom: 30px;
         

@@ -54,15 +54,16 @@ export const ContainerContent =styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 80vw;
+    @media(min-width: 340px) and  (max-width: 767px) {
+        width: 800px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-left: 46px;
 
         & .title-and-description {
 
             > h2 {
-                font-size: 30px; 
+                font-size: 1.5em; 
             }
 
             > span {
@@ -74,14 +75,14 @@ export const ContainerContent =styled.div`
                 margin-top: 120px;
 
                     > img {
-                        width: 30vw;
+                        width: 70vw;
          
                     }
             }
         }
 
         @media (min-width: 768px) and (max-width: 1024px) {
-             width: 80vw;
+            width: 80vw;
             display: flex;
 
 
@@ -126,14 +127,8 @@ export const ContainerContent =styled.div`
         }
 `
 
-
-export const CarouselContainer = styled.div`
-    width: 70vw;
-    height: 70vh;
-`
-
 export const CarouselContent = styled.div`
-    display: block;
+    display: flex;
     width: 30vw;
 
 
@@ -145,7 +140,7 @@ export const CarouselContent = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
+    @media(min-width: 340px) and  (max-width: 767px) {
         display: none;
     }
 

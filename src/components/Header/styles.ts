@@ -7,7 +7,7 @@ export const ContainerHeader = styled.div`
     align-items: center;
     margin: 0 auto;
     margin-top: -160px;
-    width: 98vw;
+    width: 100vw;
     padding: 2px;
     position: fixed;
     z-index: 1;
@@ -35,9 +35,9 @@ export const ContainerHeader = styled.div`
         } 
    }
 
-   @media (max-width: 767px) {
-        width: 98vw;
-        display: block;
+   @media(min-width: 340px) and  (max-width: 767px) {
+        width: 900px;
+        display: flex;
 
 
         > div {
@@ -83,9 +83,8 @@ export const ContentHeader = styled.div`
         width: 100px;
     }
 
-     @media (max-width: 767px) {
-        width: 100vw;
-        text-align: center;
+     @media(min-width: 340px) and  (max-width: 767px) {
+        width: 800px;
         
    }
     @media (min-width: 768px) and (max-width: 1024px) {
