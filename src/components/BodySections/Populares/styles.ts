@@ -99,8 +99,8 @@ export const ContentMost = styled.div`
     
 
 
-    @media(min-width: 360px) and (max-width: 767px) {
-        width: 77vw;
+    @media(min-width: 340px) and (max-width: 767px) {
+        width: 785px;
 
         > h2 {
             font-size: 1.4em;
