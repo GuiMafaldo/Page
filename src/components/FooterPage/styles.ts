@@ -12,7 +12,7 @@ export const ContainerFooterPage = styled.div`
         margin-left: 214px;
     }
     @media(min-width: 340px) and (max-width: 767px){
-        width: 790px;
+        width: 1120px;
         padding-bottom: 110px;
     }
 
@@ -145,7 +145,7 @@ export const TermsPolitcContent = styled.div`
     flex-direction: row;
     gap: 10px;
     width: 80vw;
-    padding: 80px 0 140px 0;
+    padding: 60px 0 70px 0;
     margin: 0 auto;
 
     > div {
@@ -177,7 +177,7 @@ export const TermsPolitcContent = styled.div`
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 800px;
+        width: 900px;
 
         & .logos {
                 img{
@@ -194,7 +194,6 @@ export const TermsPolitcContent = styled.div`
                 > li {
                     font-size: 14px;
                     list-style: none;
-                    margin-bottom: 20px;
                 }
         }
     }

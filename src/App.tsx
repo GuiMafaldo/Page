@@ -1,9 +1,11 @@
 import ContainerCompo from "./components/Container";
+import { GlobalCss } from "./global";
 
 function App() {
   return (
     <>
-      <ContainerCompo />
+        <GlobalCss />
+          <ContainerCompo /> 
     </>
   );
 }

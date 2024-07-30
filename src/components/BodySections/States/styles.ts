@@ -43,14 +43,14 @@ export const StatesContainer = styled.div`
 
     @media(min-width: 340px) and  (max-width: 767px){
         width: 100%;
-        margin-left: 150px;
-        margin-top: 400px;
+        margin-left: 50%;
+        margin-top: 200px;
 
         & .title-and-button{
 
             > h2 {
-                font-size: 1.5em;
-                margin-bottom: 40px;
+                font-size: 1.8em;
+                margin-bottom: 60px;
             }
         }
     }
@@ -100,20 +100,21 @@ export const ContentState = styled.div`
         }
 
         @media (min-width: 340px) and  (max-width: 767px){
-            width: 600px;
-            margin-left: 150px;
+            width: 690px;
+            margin-left: 50%;
 
             & .content-links {
 
                 > h3 {
-                    font-size: 1.5em; 
+                    font-size: 1.8em;
+                    margin-bottom: 40px;
                 }
 
                 > div {
                     width: 100%;
                     > li {
                         font-family: Helvetica;
-                        font-size: 12px;
+                        font-size: 16px;
                         list-style: none;
                         margin-bottom: 30px;
                         cursor: pointer;

@@ -81,37 +81,39 @@ export const ContainerContent =styled.div`
         }
 
     @media (min-width: 340px) and (max-width: 767px) {
-        width: 800px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 46px;
-        margin-bottom: 440px;
+        width: 900px;
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+        
 
         & .title-and-description {
+                margin-left: 50px;
                 > h2 {
-                    font-size: 1.5em; 
+                    font-size: 1.8em;
+                    margin-bottom: 40px; 
                 }
 
                 > p {
-                    font-size: 14px;
-                    width: 250px; 
+                    font-size: 15px;
+                    width: 400px; 
                 }
         }
 
         & .phone {
-            margin: 0 auto;  
+            margin: 0 auto;
+            margin-left: -40px;
+            margin-right: 20px;
                 > img {
-                    width: 70vw;
-                    margin-left: -380px;
-                    margin-top: 80px;          
+                    width: 46vw;          
             }
         }
         
 
             & .acordo { 
-                margin-top: 95px;
-                width: 800px;
-                height: 30vh;
+                margin-top: 1px;
+                width: 300px;
+                height: 60vh;
                 padding: 30px 0 70px 0;
 
                     > h2 {
@@ -121,10 +123,10 @@ export const ContainerContent =styled.div`
 
                 & .acordo-image {
                     margin: 0 auto;
-                    width: 140px;
+                    width: 200px;
 
                         > img {
-                            margin-right: 50px; 
+                            margin-right: 20px; 
                         }
                 }
             }

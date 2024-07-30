@@ -10,8 +10,8 @@ export const ContainerSearchsMost = styled.div`
     padding-bottom: 60px;
 
     @media(min-width: 340px) and (max-width: 767px) {
-        width: 800px;
-        margin-left: 40px;
+        width: 900px;
+        margin-left: 25%;
     }
     
     @media(min-width: 768px) and (max-width: 1024px) {
@@ -53,7 +53,8 @@ export const ContentMost = styled.div`
     }
 
     @media(min-width: 340px) and (max-width: 767px){
-        width: 780px;
+        width: 860px;
+        margin-top: -10px;
 
         > h2 {
             margin-top: -8px;
@@ -61,13 +62,13 @@ export const ContentMost = styled.div`
         }
 
          & .content {
-            width: 780px;
+            width: 850px;
             gap: 10px;
                 margin: 0 auto;
 
                 > span {
                      > li {
-                        font-size: 13px; 
+                        font-size: 15px; 
                      } 
                 }
             }
@@ -95,27 +96,4 @@ export const ContentMost = styled.div`
                 }
             }
         }
-
-    
-
-
-    @media(min-width: 340px) and (max-width: 767px) {
-        width: 785px;
-
-        > h2 {
-            font-size: 1.4em;
-            margin: 0; 
-        }
-
-        & .content {
-            margin: 0;
-            margin-top: -10px;
-
-            > span {
-                > li {
-                    font-size: 13px;
-                    width: 90px;
-            }
-        }
-    }
 `

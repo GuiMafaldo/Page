@@ -36,7 +36,7 @@ export const ContainerHeader = styled.div`
    }
 
    @media(min-width: 340px) and  (max-width: 767px) {
-        width: 900px;
+        width: 1120px;
         display: flex;
 
 

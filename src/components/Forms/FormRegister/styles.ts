@@ -57,9 +57,10 @@ export const ContainerFormulario = styled.div`
         }
 
         @media(min-width: 340px) and (max-width: 767px) {
-            width: 409px;
-            padding: 16px;
-            margin-left: -30px;
+            width: 380px;
+            padding: 22px;
+            margin: 0 auto;
+            margin-left: -10px;
             margin-top: -20px;
         }
 
@@ -71,7 +72,20 @@ export const ContainerFormulario = styled.div`
 
       @media(min-width: 340px) and  (max-width: 767px){
         width: 100%;
-        padding: 30px;
+        padding: 10px;
+
+        > h2 {
+            font-size: 1.3em;
+            margin-bottom: -30px;
+            padding: -10px; 
+        }
+
+        > div {
+            > button {
+                padding: 8px;
+                width: 70px;
+            } 
+        }
 
       }
 
@@ -111,12 +125,20 @@ export const ContentForm = styled.form`
             border: none;
 
             > select {
-                border: none; 
+                border: none;
+                padding: 8px; 
             }
 
             > img{
                 width: 30px; 
             }
+        }
+
+        @media(min-width: 340px) and (max-width: 767px) {
+            border: none;
+            background-color: #fff;
+            padding: 8px;
+            margin-bottom: -14px;
         }
     }
 
@@ -131,4 +153,11 @@ export const ContentForm = styled.form`
         border: none;
         border-radius: 20px;
     }
+        @media(min-width: 340px) and (max-width: 767px) {
+           > button {
+                width: 60vw; 
+           }
+        }
+
+     
 `

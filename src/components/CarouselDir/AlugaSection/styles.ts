@@ -53,15 +53,22 @@ export const ContainerContent =styled.div`
     }
 
     @media(min-width: 340px) and  (max-width: 767px) {
-        width: 800px;
-        margin-left: 46px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;       
+        width: 900px;
+        margin-left: 25%;
+        margin-top: 140px;
+        display: flex;
+        align-items: center;      
     
         & .title-and-description {
+            margin-left: 50px;
 
             > h2 {
-                font-size: 1.5em; 
+                font-size: 1.8em;
+                margin-bottom: 40px; 
+            }
+
+            >p {
+                width: 400px;
             }
 
             > span{
@@ -70,10 +77,10 @@ export const ContainerContent =styled.div`
         }
 
         & .poltrona {
-                margin-top: 120px;
+                margin-top: 60px;
 
                     > img {
-                        width: 80vw;
+                        width: 100vw;
          
                     }
             }
