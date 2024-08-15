@@ -71,7 +71,6 @@ const ContainerFooter = () => {
                     <img src="./assets/applestore.webp"/>
                 </div>
             </LastItmsPage>
-            <span>Versão: 27/07/2024, 1</span>
         </ContainerFooterPage>
     )
 

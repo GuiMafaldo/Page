@@ -3,32 +3,35 @@ import styled from "styled-components";
 export const ContainerFooterPage = styled.div`
     background-color: #e1e1e1;
     margin-top: 100px;
+    width: 100%;
     height: 70vh;
     padding: 60px;
     padding-bottom: 110px;
-    
 
     > span {
         margin-left: 214px;
     }
-    @media(min-width: 340px) and (max-width: 767px){
-        width: 1120px;
-        padding-bottom: 110px;
+
+    @media (max-width: 767px) {
+        width: 100vw;
+        padding: 30px 20px 40px 20px;
+        > span {
+            margin-left: 0;
+        }
     }
 
-    @media(min-width: 768px) and (max-width: 1024px) {
-        width: 89vw;
-        padding-bottom: 130px;    
-}
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding-bottom: 130px;
+    }
+`;
 
-`
 export const SectionAbout = styled.section`
     display: flex;
     justify-content: space-between;
-    width: 70vw;
+    width: 80%;
     margin: 0 auto;
 
-    & .about{
+    & .about {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -36,7 +39,7 @@ export const SectionAbout = styled.section`
         > h4 {
             font-family: Helvetica;
             font-size: 22px;
-            margin-bottom: -1px;
+            margin-bottom: 0;
         }
 
         > span {
@@ -46,7 +49,7 @@ export const SectionAbout = styled.section`
     }
 
     & .about-card {
-        width: 10vw;
+        width: 16vw;
         padding: 40px;
         background-color: #134074;
 
@@ -54,184 +57,169 @@ export const SectionAbout = styled.section`
             color: #fff;
             font-family: Helvetica;
             font-size: 30px;
-            margin-top: -1px;
-            margin-bottom: 20px;    
+            margin: 0 0 20px;
         }
 
-            > span, a {
-                color: #fff; 
-                font-family: Helvetica;
-                font-size: 14px;
-                text-decoration: none;
-            }
-
-            > div {
-                display: flex;
-                align-items: center;
-                
-                > img {
-                    width: 30px;
-                    height: 30px;
-                    margin-left: 10px;
-                    cursor: pointer;
-                    background-color: #fff;
-                }
-            }     
-    }
-
-     @media(min-width: 340px) and (max-width: 767px){
-            width: 100%;
-            margin-left: 50px;
-
-            & .about{
-                width: 90vw;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                margin-left: -16px;
-
-                > h4 {
-                    font-family: Helvetica;
-                    font-size: 15px;
-                
-                }
-
-                > span {
-                    font-family: Helvetica;
-                    font-size: 12px;
-                }
-            }
-
-            & .about-card {
-                display: none;
-            }
+        > span, a {
+            color: #fff;
+            font-family: Helvetica;
+            font-size: 14px;
+            text-decoration: none;
         }
-
-        @media(min-width: 768px) and (max-width: 1024px) {
-            width: 100vw;
-
-            .about {
-                width: 90vw;
-
-                > h4 {
-                    font-size: 18px; 
-                }
-
-                > span {
-                     font-size: 14px; 
-                }
-            }
-
-            & .about-card {
-                width: 60vw;
-                height: 25vh;
-                margin-top: 25px;
-                margin-right: 100px;
-
-                > h4 {
-                    margin-top: -10px;
-                    font-size: 16px;
-                }
-
-                > span {
-                    font-size: 13px; 
-                }
-            }
-
-        }
-`
-export const TermsPolitcContent = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 80vw;
-    padding: 60px 0 70px 0;
-    margin: 0 auto;
-
-    > div {
-        display: flex;
-        margin: 0 auto;
-        margin-right: 20px;
-        gap: 30px;
-        > li {
-            margin-right: -16px;
-            list-style: none;
-            text-decoration: underline;
-            cursor: pointer; 
-        }
-    }
-
-    & .logotipo {
-        width: 100%;
-        display: flex;
-        margin-left: 250px;
-            img {
-                width: 30px;
-                margin-right: 6px;
-                cursor: pointer;
-            }
-        }
-        
-
-    @media(min-width: 340px) and (max-width: 767px){
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        width: 900px;
-
-        & .logos {
-                img{
-                    width 20px;
-                }
-            }
-
 
         > div {
+            display: flex;
+            align-items: center;
+
+            > img {
+                width: 30px;
+                height: 30px;
+                margin-left: 10px;
+                cursor: pointer;
+                background-color: #fff;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        width: 90vw;
+
+        & .about {
             width: 100%;
-            padding-top: 10px;
-            gap: 30px;
-            margin-left: 40px;
-                > li {
-                    font-size: 14px;
-                    list-style: none;
-                }
+            gap: 20px;
+
+            > h4 {
+                font-size: 14px;
+            }
+
+            > span {
+                font-size: 12px;
+            }
+        }
+
+        & .about-card {
+            display: none;
         }
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
-        width: 80vw;
+        width: 100%;
+
+        .about {
+            width: 90%;
+
+            > h4 {
+                font-size: 18px;
+            }
+
+            > span {
+                font-size: 14px;
+            }
+        }
+
+        & .about-card {
+            width: 60vw;
+            height: 25vh;
+            margin-top: 25px;
+
+            > h4 {
+                margin-top: -10px;
+                font-size: 16px;
+            }
+
+            > span {
+                font-size: 13px;
+            }
+        }
+    }
+`;
+
+export const TermsPolitcContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    padding: 60px 0 70px;
+    margin: 0 auto;
+
+    > div {
         display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
 
         > li {
-            font-size: 12px; 
+            font-size: 14px;
+            list-style: none;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    & .logotipo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 30px;
+            margin-right: 6px;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        margin-left:3%;
+        width: 80%;
+
+        & .logotipo img {
+            width: 20px;
+        }
+
+        > div {
+            padding-top: 6px;
+            gap: 20px;
+
+            > li {
+                font-size: 11px;
+                list-style: none;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 80%;
+
+        > li {
+            font-size: 12px;
         }
 
         > img {
             width: 18px;
             height: 22px;
-            margin-right: 16px; 
+            margin-right: 16px;
         }
 
         > div {
-            width: 80vw;
-            padding-top: 10px;
             gap: 30px;
-            margin: 0 auto;
-                > li {
-                    font-size: 16px;
-                    list-style: none;
-                    margin-bottom: 20px;
+            padding-top: 10px;
+
+            > li {
+                font-size: 16px;
+                margin-bottom: 20px;
             }
         }
     }
-`
+`;
+
 export const LastItmsPage = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    width: 70vw;
+    width: 70%;
     margin: 0 auto;
 
     & .creci {
@@ -240,19 +228,20 @@ export const LastItmsPage = styled.div`
         gap: 40px;
         margin-bottom: 10px;
 
-            & .ver-todos {
-                text-decoration: underline;
-                cursor:pointer;
-            }
-            > p {
-                font-family: Helvetica; 
-            } 
+        & .ver-todos {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        > p {
+            font-family: Helvetica;
+            font-size: 16px;
+        }
 
         > img {
             width: 26px;
             height: 30px;
-            margin-left: -40px;
-            cursor:pointer;
+            cursor: pointer;
         }
     }
 
@@ -261,74 +250,60 @@ export const LastItmsPage = styled.div`
 
         > img {
             cursor: pointer;
-            height: 40px; 
+            height: 40px;
         }
     }
 
-    @media(min-width: 340px) and (max-width: 767px){
-        width: 790px;
+    @media (max-width: 767px) {
+        width: 90%;
         margin-top: -40px;
         padding-bottom: 10px;
 
         & .creci {
-            & .ver-todos {
-                text-decoration: underline;
-                cursor:pointer;
-            }
+            gap: 10px;
+
             > p {
-                font-family: Helvetica; 
                 font-size: 14px;
             }
 
             > img {
                 width: 20px;
                 height: 20px;
-                margin-left: -40px;
-                cursor:pointer;
             }
         }
 
         & .images {
-            display: flex;
-            margin-right: 30px;
+            margin-right: 90px;
 
             > img {
-                cursor: pointer;
-                height: 30px; 
+                height: 26px;
             }
         }
     }
 
-    @media(min-width: 768px) and (max-width: 1024px) {
-        width: 100vw;
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
         margin-top: -80px;
 
         & .creci {
-            & .ver-todos {
-                text-decoration: underline;
-                cursor:pointer;
-            }
+            gap: 20px;
+
             > p {
-                font-family: Helvetica; 
                 font-size: 14px;
             }
 
             > img {
                 width: 20px;
                 height: 26px;
-                margin-left: -40px;
-                cursor:pointer;
             }
         }
 
-            & .images {
-                display: flex;
-                margin-right: 130px;
+        & .images {
+            margin-right: 130px;
 
-                > img {
-                    cursor: pointer;
-                    height: 30px; 
-                }
+            > img {
+                height: 30px;
             }
+        }
     }
 `

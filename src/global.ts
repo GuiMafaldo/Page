@@ -7,8 +7,10 @@ export const GlobalCss = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
-
-    body {
+        
+        body {
+        width: 100vw;
         min-height: 100vh;
+        overflow-x: hidden;
     }
 `

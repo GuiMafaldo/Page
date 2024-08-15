@@ -1,48 +1,68 @@
 import styled from "styled-components";
 
-
 export const FormSearch = styled.div`
     max-width: 1024px;
-    width: 100vw;
-    margin: 0 auto;
-    margin-top: 160px;
+    width: 100%;
+    margin: 160px auto 0;
+    padding: 0 20px;
 
-    @media(min-width: 340px) and (max-width: 767px){
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 140px;
+    @media (max-width: 767px) {
     }
 `
+
 export const FormContent = styled.form`
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     margin-bottom: 60px;
+    flex-direction: row;
 
     input {
-        width: 100px;
+        width: 150px;
         padding: 8px;
         border: 1px solid #000;
         border-radius: 8px;
     }
 
-    > button {
+    button {
         border: none;
         border-radius: 8px;
-        padding: 10px;
+        padding: 10px 20px;
         color: #fff;
         font-family: Helvetica;
         font-weight: 700;
-        background-color: #669bbc; 
+        background-color: #669bbc;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #557a99;
+        }
     }
 
-     select {
+    select {
         padding: 7px;
         border: 1px solid #000;
         border-radius: 8px;
-        gap: 30px;
         cursor: pointer;
-     }
+    }
+
+    @media (max-width: 767px) {
+        width: 80%;
+        padding: 60px 0 0 60px;
+        gap: 15px;
+
+        input {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        select {
+            width: 100%;
+        }
+    
 `

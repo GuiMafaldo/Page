@@ -1,106 +1,103 @@
 import styled from "styled-components";
 
-export const ContainerContent =styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+export const ContainerContent = styled.div`
+    display: flex;
+    justify-content: space-between;
     background-color: #a3b18a;
     width: 70vw;
     height: 60vh;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 100px auto 0;
+    gap: 20px;
 
     & .title-and-description {
-        margin-top: 10px;
-        margin-left: 60px;
+        margin: 10px 10px 0 10px;
+        padding: 40px;
 
-         > h2 {
-             color: #fff;
-             font-size: 2em;
-             font-family: Helvetica; 
-         }
+        > h2 {
+            color: #fff;
+            font-size: 2em;
+            font-family: Helvetica;
+        }
 
-         > p {
-             font-family: Helvetica;
-             color: #fff;
-             
-         }
+        > p {
+            font-family: Helvetica;
+            color: #fff;
+        }
 
-         > button {
+        > button {
             padding: 20px;
             border: none;
             border-radius: 25px;
-            margin-top: 40px;
-            margin-bottom: 30px;
+            margin: 40px 0 30px;
             font-family: Helvetica;
             font-size: 16px;
             font-weight: 700;
             cursor: pointer;
-         }
+        }
 
-         > span {
+        > span {
             font-family: Helvetica;
             margin-left: 10px;
             cursor: pointer;
             color: #fff;
-         }
-    }
-
-    & .poltrona {
-        margin-top: 120px;
-        margin-left: 80px;
-        > img {
-            width: 14vw;
-         
         }
     }
 
-    @media(min-width: 340px) and  (max-width: 767px) {
-       width: 900px;
-        margin-left: 25%;
-        margin-top: 140px;
-        display: flex;
+    & .porta {
+        margin: 120px 80px 0 0;
+
+        > img {
+            width: 14vw;
+        }
+    }
+
+    @media (max-width: 767px) {
+        width: 80vw;
+        margin: 38px;
+        flex-direction: row;
         align-items: center;
-        flex-direction: row-reverse; 
 
         & .title-and-description {
-            margin-right: 40px;
+            margin-left: 10px;
 
             > h2 {
                 font-size: 1.8em;
-                margin-bottom: 40px; 
+                margin-bottom: 40px;
             }
 
-            >p {
-                width: 400px;
+            > p {
+                font-size: 14px;
+                width: 300px;
             }
 
             > span {
-                color: #fff; 
+                color: #fff;
+            }
+
+            > button {
+                width: 80%; 
+                font-size: 14px;
             }
         }
 
         & .porta {
-                margin-top: 60px;
-                
-                > img {
-                        width: 100vw;
-         
-                    }
+            margin-top:0;
+            width: 100%;
+
+            > img {
+                width: 26vw;
             }
         }
+    }
 
-        @media (min-width: 768px) and (max-width: 1024px) {
-            width: 80vw;
-            display: flex;
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 80vw;
+        flex-direction: row;
+        align-items: center;
 
-
-            & .title-and-description {
-
+        & .title-and-description {
             > h2 {
-                font-size: 1.6em; 
-            }
-            > span {
-                color: #fff; 
+                font-size: 1.6em;
             }
 
             > p {
@@ -113,8 +110,7 @@ export const ContainerContent =styled.div`
                 height: 30px;
                 font-size: 13px;
                 font-weight: 600;
-                display: flex;
-                align-items: center;
+                margin-top: 0;
             }
 
             > span {
@@ -123,36 +119,31 @@ export const ContainerContent =styled.div`
             }
         }
 
-        & .poltrona {
-                margin-top: 100px;
-                margin-right: 0;
+        & .porta {
+            margin-top: 100px;
 
-                    > img {
-                        width: 25vw;
-         
-                    }
+            > img {
+                width: 25vw;
             }
         }
+    }
 `
-
 export const CarouselContent = styled.div`
-    display: flex;
+    display: block;
     width: 30vw;
 
-
     & .content-image {
-        
-        img{
+        img {
             width: 600px;
             height: 552px;
         }
     }
 
-    @media(min-width: 340px) and  (max-width: 767px) {
+    @media (max-width: 767px) {
         display: none;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
-            display: none;
+        display: none;
     }
 `

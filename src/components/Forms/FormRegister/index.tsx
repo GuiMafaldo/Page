@@ -22,8 +22,8 @@ const FormularioCadastro = () => {
             </div>
             <ContentForm>
                 <input type="text" placeholder="Digite seu nome:" />
-                <input type="email" placeholder="Digite seu email" />
-                <input type="number"  placeholder="Digite seu telefone"/>
+                <input type="email" placeholder="Digite seu email:" />
+                <input type="number"  placeholder="Digite seu telefone:"/>
                 <div className="select-quartos">
                     <span>
                         <img src="/assets/gar.png" alt="" />

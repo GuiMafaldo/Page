@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
-
 export const CompraVendaInfo = styled.div`
     display: flex;
     align-items: center;
     width: 70vw;
-    margin: 0 auto;
-    margin-top: 60px;
+    margin: 60px auto 0;
     justify-content: space-evenly;
     background-color: #f1f1f1;
-
+    padding: 20px; 
 
     & .title_and_description {
         margin-right: 20px;
@@ -17,19 +15,16 @@ export const CompraVendaInfo = styled.div`
         > h2 {
             font-family: Helvetica;
             font-size: 2em;
-            margin-top: -80px;
-            margin-left: 20px;
+            margin: 0 20px 20px 0; 
         }
 
         > p {
-            margin-left: 20px;
-            margin-bottom: 40px;
+            margin: 0 20px 40px 0; 
+            font-size: 16px; 
         }
 
         > button {
-            display: flex;
-            margin: 0 auto;
-            margin-top: 100px;
+            margin: 100px auto 0; 
             padding: 20px;
             width: 160px;
             border: none;
@@ -39,6 +34,7 @@ export const CompraVendaInfo = styled.div`
             font-family: Helvetica;
             font-weight: 700;
             cursor: pointer;
+            display: block; 
         }
     }
 
@@ -46,59 +42,60 @@ export const CompraVendaInfo = styled.div`
         background-color: #669bbc;
         padding: 20px;
         margin-left: 15px;
-        
 
         > img {
-            width: 740px;
-            height: 500px;
+            width: 100%;
+            height: auto;
+            max-width: 740px;
+            max-height: 500px;
             border-radius: 24px;
+            object-fit: cover; 
         }
     }
 
-    @media (min-width: 340px) and (max-width: 767px) {
-        width: 900px;
-        display: flex;
+    @media (max-width: 767px) {
+        width: 80vw;
         flex-direction: column;
         margin-top: 140px;
-        margin-left: 25%;
+        margin-left: 5%; 
 
-         & .title_and_description {
+        & .title_and_description {
+            margin-right: 0; 
+            
             > h2 {
                 font-size: 1.8em;
-                padding-top: 140px;
-                margin-bottom: 40px; 
+                margin: 0 0 20px 0; 
+                padding-top: 30px; 
             }
 
             > p {
-                margin-bottom: -60px;
-                font-size: 18px; 
+                margin: 0 0 40px 0; 
+                font-size: 18px;
             }
-         }
-
+        }
 
         & .image_container {
-            margin-top: 30px;
-            margin-right: 20px;
+            margin: 30px auto 0; 
 
             > img {
-                margin-top: 6px;
                 width: 100%;
-                height: 36vh;
+                height: auto;
+                max-height: 36vh; 
             }
-
         }
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
         width: 80vw;
-        display: block;
+        flex-direction: column;
         margin-top: 140px;
+        padding: 20px;
 
         & .title_and_description {
-            
             > h2 {
                 font-size: 1.6em;
-                padding: 20px; 
+                padding: 20px 0; 
+                margin: 0 0 20px 0;
             }
 
             > p {
@@ -107,23 +104,23 @@ export const CompraVendaInfo = styled.div`
             }
 
             > button {
-                margin-top: -3px; 
+                margin-top: 20px; 
             }
-
         }
 
         & .image_container {
-                display: flex;
-                margin: 0 auto;
-                margin-top: 30px;
-                height: 40vh;
-                width: 60vw;
+            margin: 30px auto 0; 
+            height: 40vh;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
 
             > img {
-                width: 60vw;
-                height: 40vh;
+                width: 100%;
+                height: auto;
+                max-width: 60vw; 
+                max-height: 40vh; 
             }
-
         }
     }
 `

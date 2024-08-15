@@ -5,17 +5,20 @@ export const ContainerHeader = styled.div`
     opacity: 0.8;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
     margin-top: -160px;
-    width: 100vw;
+    width: 100%;
     padding: 2px;
     position: fixed;
     z-index: 1;
 
-
-   > div {
+    > div {
+        display: flex;
+        align-items: center;
         margin-right: 160px;
-         > button {
+
+        > button {
             width: 80px;
             margin-right: 30px;
             background-color: #fff;
@@ -25,55 +28,56 @@ export const ContainerHeader = styled.div`
             font-weight: 700;
             font-family: Helvetica;
             cursor: pointer;
-            transition: all ease 0.5;
+            transition: all 0.5s ease;
 
             &:hover {
                 background-color: #669bbc;
                 color: #fff;
-                
             }
         } 
-   }
+    }
 
-   @media(min-width: 340px) and  (max-width: 767px) {
-        width: 1120px;
-        display: flex;
-
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 70px  0  0;
+        height: 20vh;
+        top: 1;
+        left: 0;
 
         > div {
-            margin-left: 40px;
+            margin: -12px 0;
             > button {
-                display: none; 
-            } 
+                display: none;
+            }
         }
-   }
+    }
 
-   @media (min-width: 768px)and (max-width: 1024px) {
-        width: 100vw;
-        display: flex;
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 10px;
+        justify-content: center;
 
         > div {
-            display: flex;
-            margin-left: 40px;
+            margin-right: 20px;
 
             > button {
                 margin-right: 10px;
-            } 
+            }
         }
-   }
-`
+    }
+`;
 
 export const ContentHeader = styled.div`
     max-width: 1024px;
-    width: 100vh;
+    width: 100%;
     height: 13vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
     margin: 0 auto;
 
-    h1{
+    h1 {
         color: #fff;
         font-family: Helvetica;
         font-size: 1.8em;
@@ -83,15 +87,31 @@ export const ContentHeader = styled.div`
         width: 100px;
     }
 
-     @media(min-width: 340px) and  (max-width: 767px) {
-        width: 800px;
-        
-   }
-    @media (min-width: 768px) and (max-width: 1024px) {
-        width: 100vw;
-        display: flex;
-        gap: 24px;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        
-   }
-`
+        height: auto;
+
+        h1 {
+            font-size: 1.3em;
+        }
+
+        img {
+            margin-top: 30px;
+            width: 80px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        gap: 24px;
+
+        h1 {
+            font-size: 1.6em;
+        }
+
+        img {
+            width: 90px;
+        }
+    }
+`;

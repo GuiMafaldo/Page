@@ -3,30 +3,26 @@ import styled from "styled-components";
 export const ContainerSearchsMost = styled.div`
     background-color: #bbd0ff;
     width: 70vw;
-    height: 54vh;
-    margin: 0 auto;
-    margin-top: 60px;
-    padding: 28px 20px;
-    padding-bottom: 60px;
+    height: 60vh;
+    margin: 100px auto 0;
+    padding: 28px 20px 60px;
 
-    @media(min-width: 340px) and (max-width: 767px) {
-        width: 900px;
-        margin-left: 25%;
+    @media (max-width: 767px) {
+        width: 80vw;
+        margin-left: 5%;
     }
-    
-    @media(min-width: 768px) and (max-width: 1024px) {
+
+    @media (min-width: 768px) and (max-width: 1024px) {
         width: 80vw;
     }
-
 `
 
 export const ContentMost = styled.div`
     background-color: #fff;
     width: 68vw;
-    height: 50vh;
-    margin: 0 auto;
+    height: 56vh;
+    margin: -10px auto 0;
     padding: 10px;
-    padding-bottom: 60px;
 
     > h2 {
         padding: 30px;
@@ -36,7 +32,7 @@ export const ContentMost = styled.div`
 
     & .content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         width: 60vw;
         margin: 0 auto;
         gap: 20px;
@@ -52,48 +48,46 @@ export const ContentMost = styled.div`
         }
     }
 
-    @media(min-width: 340px) and (max-width: 767px){
-        width: 860px;
-        margin-top: -10px;
+    @media (max-width: 767px) {
+        width: 75vw;
+        margin: -10px auto 0;
 
         > h2 {
-            margin-top: -8px;
-            font-size: 1.8em; 
+            padding: 12px;
+            font-size: 1.8em;
+            margin: 0;
         }
 
-         & .content {
-            width: 850px;
-            gap: 10px;
-                margin: 0 auto;
+        & .content {
+            width: 100%;
+            gap: 2px;
 
-                > span {
-                     > li {
-                        font-size: 15px; 
-                     } 
+            > span {
+                > li {
+                    font-size: 12px;
                 }
             }
+        }
     }
-    
-    @media(min-width: 768px) and (max-width: 1024px) {
-        width: 78vw;
-        margin-top: -2px;
-            
-           > h2 {
-                margin-top: -10px;
-                font-size: 1.8em;
-            }
-        
-        
-            & .content {
-            width: 80vw;
-            gap: 10px;
-                margin: 0 auto;
 
-                > span {
-                     > li {
-                        font-size: 13px; 
-                     } 
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 80vw;
+        margin-top: -2px;
+
+        > h2 {
+            font-size: 1.8em;
+            margin-top: -10px;
+        }
+
+        & .content {
+            width: 80%;
+            gap: 10px;
+
+            > span {
+                > li {
+                    font-size: 13px;
                 }
             }
         }
-`
+    }
+`;
