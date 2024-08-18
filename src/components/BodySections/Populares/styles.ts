@@ -53,6 +53,7 @@ export const ContentMost = styled.div`
         width: 86vw;
         height: 53vh;
         margin: -24px -10px;
+        margin-left: 5%;
 
         > h2 {
             padding: 16px;

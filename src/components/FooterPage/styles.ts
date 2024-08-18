@@ -14,7 +14,7 @@ export const ContainerFooterPage = styled.div`
 
     @media(min-width: 360px)and (max-width: 767px) {
         width: 100%;
-        padding: 30px 20px 40px 20px;
+        padding: 30px 20px 20px 20px;
         > span {
             margin-left: 0;
         }
