@@ -23,7 +23,7 @@ export const ContainerFooterPage = styled.div`
     @media (min-width: 768px) and (max-width: 1024px) {
         padding-bottom: 130px;
     }
-`;
+`
 
 export const SectionAbout = styled.section`
     display: flex;
@@ -132,7 +132,7 @@ export const SectionAbout = styled.section`
             }
         }
     }
-`;
+`
 
 export const TermsPolitcContent = styled.div`
     display: flex;
@@ -213,7 +213,7 @@ export const TermsPolitcContent = styled.div`
             }
         }
     }
-`;
+`
 
 export const LastItmsPage = styled.div`
     display: flex;

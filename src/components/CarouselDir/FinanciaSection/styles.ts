@@ -54,7 +54,7 @@ export const ContainerContent = styled.div`
     }
 
     @media(min-width: 360px) and (max-width: 767px) {
-        width: 96vw;
+        width: 90vw;
         margin-left: 5%;
         display: flex;
         flex-direction: row;
@@ -89,7 +89,7 @@ export const ContainerContent = styled.div`
             margin: 10px 30px 0 -50px;
 
             > img {
-                width: 32vw;
+                width: 26vw;
             }
         }
     }

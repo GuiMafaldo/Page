@@ -54,7 +54,7 @@ export const CompraVendaInfo = styled.div`
     }
 
     @media (min-width: 360px) and (max-width: 767px) {
-        width: 96vw;
+        width: 90vw;
         flex-direction: column;
         margin-top: 140px;
         margin-left: 5%; 
