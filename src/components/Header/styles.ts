@@ -67,6 +67,7 @@ export const ContainerHeader = styled.div`
     }
 `
 export const ContentHeader = styled.div`
+    max-width: 1024px;
     width: 100%;
     height: 13vh;
     display: flex;
