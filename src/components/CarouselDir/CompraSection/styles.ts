@@ -43,7 +43,7 @@ export const ContainerContent = styled.div`
         }
     }
 
-    & .porta {
+    & .fechadura {
         margin: 120px 80px 0 0;
 
         > img {
@@ -53,7 +53,7 @@ export const ContainerContent = styled.div`
 
     @media(min-width: 360px) and (max-width: 767px) {
         width: 90vw;
-        margin-left: 2%;
+        margin-left: 5%;
         flex-direction: row;
         align-items: center;
 

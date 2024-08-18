@@ -57,7 +57,7 @@ export const CompraVendaInfo = styled.div`
         width: 90vw;
         flex-direction: column;
         margin-top: 140px;
-        margin-left: 2%; 
+        margin-left: 5%; 
 
         & .title_and_description {
             margin-right: 0; 

@@ -53,7 +53,7 @@ export const ContainerContent = styled.div`
 
     @media(min-width: 360px) and (max-width: 767px) {
         width: 90vw;
-        margin-left: 2%;
+        margin-left: 5%;
         display: flex;
         flex-direction: row;
         align-items: center;
