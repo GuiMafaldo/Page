@@ -184,7 +184,7 @@ export const TermsPolitcContent = styled.div`
             padding-top: 6px;
             gap: 20px;
 
-            > li 
+            > li {
                 font-size: 11px;
                 list-style: none;
             }
