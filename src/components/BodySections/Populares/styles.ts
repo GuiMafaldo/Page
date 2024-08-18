@@ -10,7 +10,7 @@ export const ContainerSearchsMost = styled.div`
     @media (min-width: 360px) and (max-width: 767px) {
         width: 90vw;
         height: 54vh;
-        margin-left: 2%;
+        margin-left: 5%;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -53,7 +53,6 @@ export const ContentMost = styled.div`
         width: 86vw;
         height: 53vh;
         margin: -24px -10px;
-        margin-left: 5%;
 
         > h2 {
             padding: 16px;

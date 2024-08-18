@@ -68,7 +68,7 @@ export const ContainerFormulario = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
+    @media(min-width: 360px) and (max-width: 767px) {
         width: 100%;
         height: 74vh;
         padding: 6px;
@@ -88,7 +88,7 @@ export const ContainerFormulario = styled.div`
     @media (min-width: 768px) and (max-width: 1024px) {
         margin-left: auto;
         margin-top: 120px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 `;
 
@@ -133,7 +133,7 @@ export const ContentForm = styled.form`
             }
         }
 
-        @media (max-width: 767px) {
+        @media(min-width: 360px) and (max-width: 767px) {
             flex-direction: column;
             align-items: center;
             gap: 10px;
@@ -159,7 +159,7 @@ export const ContentForm = styled.form`
         border-radius: 20px;
         cursor: pointer;
 
-        @media (max-width: 767px) {
+        @media (min-width: 360px) and (max-width: 767px) {
             width: 80%;
         }
     }
