@@ -9,6 +9,7 @@ export const ContainerSearchsMost = styled.div`
 
     @media (min-width: 360px) and (max-width: 767px) {
         width: 90vw;
+        height: 54vh;
         margin-left: 5%;
     }
 
@@ -49,12 +50,13 @@ export const ContentMost = styled.div`
     }
 
     @media (min-width: 360px) and (max-width: 767px) {
-        width: 90vw;
-        margin: -10px auto 0;
+        width: 86vw;
+        height: 53vh;
+        margin: -24px -10px;
 
         > h2 {
-            padding: 12px;
-            font-size: 1.8em;
+            padding: 16px;
+            font-size: 1.2em;
             margin: 0;
         }
 
@@ -63,8 +65,9 @@ export const ContentMost = styled.div`
             gap: 2px;
 
             > span {
+             padding: 2px;
                 > li {
-                    font-size: 12px;
+                    font-size: 10px;
                 }
             }
         }

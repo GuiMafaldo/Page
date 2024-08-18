@@ -84,7 +84,7 @@ export const ContainerContent = styled.div`
 
         & .fechadura {
             margin-top:0;
-            margin-left: -70px;
+            margin-left: -80px;
             width: 100%;
 
             > img {

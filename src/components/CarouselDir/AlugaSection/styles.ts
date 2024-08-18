@@ -86,7 +86,7 @@ export const ContainerContent = styled.div`
         }
 
         & .poltrona {
-            margin: 20px 30px 0 -70px;
+            margin: 20px 30px 0 -90px;
             width: 100%;
 
             > img {

@@ -48,7 +48,7 @@ export const StatesContainer = styled.div`
     }
 
     @media (min-width: 360px) and (max-width: 767px) {
-        width: 96vw;
+        width: 90vw;
         margin-left: 5%;
         margin-top: 100px;
         background-color: #f9f9f9;
@@ -119,7 +119,7 @@ export const ContentState = styled.div`
     }
 
     @media (min-width: 360px) and (max-width: 767px) {
-        width: 90vw;
+        width: 86vw;
         margin-left: 5%;
         margin-top: 80px;
         display: flex;
@@ -128,7 +128,7 @@ export const ContentState = styled.div`
         & .content-links {
             width: 100%;
             > h3 {
-                font-size: 1.6em;
+                font-size: 1em;
                 margin-bottom: 40px;
             }
 

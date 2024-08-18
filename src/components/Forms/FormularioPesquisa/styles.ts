@@ -48,8 +48,8 @@ export const FormContent = styled.form`
         cursor: pointer;
     }
 
-    @media (max-width: 767px) {
-        width: 80%;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 90%;
         padding: 60px 0 0 60px;
         gap: 15px;
 

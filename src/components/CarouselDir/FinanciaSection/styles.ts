@@ -89,7 +89,7 @@ export const ContainerContent = styled.div`
             margin: 10px 30px 0 -50px;
 
             > img {
-                width: 34vw;
+                width: 32vw;
             }
         }
     }

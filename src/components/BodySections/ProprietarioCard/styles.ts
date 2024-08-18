@@ -117,18 +117,19 @@ export const ContainerContent = styled.div`
             margin-left: 10px;
 
             > h2 {
-                font-size: 1.2em;
+                font-size: 1em;
                 margin-left: -20px;
                 margin-bottom: 30px;
             }
 
             & .acordo-image {
-                width: 50px;
+                width: 40px;
                 margin: 0 auto;
-                margin-left: -5%;
+                margin-left: 6px;
 
                 > img {
-                    margin-right: 20%;
+                    width: 30px;
+                    margin-right: 22%;
                 }
             }
         }

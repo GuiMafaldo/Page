@@ -254,16 +254,16 @@ export const LastItmsPage = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
+    @media(min-width: 360px) and (max-width: 767px) {
         width: 90%;
         margin-top: -40px;
         padding-bottom: 10px;
 
         & .creci {
-            gap: 10px;
+            gap: 12px;
 
             > p {
-                font-size: 14px;
+                font-size: 12px;
             }
 
             > img {
@@ -273,10 +273,10 @@ export const LastItmsPage = styled.div`
         }
 
         & .images {
-            margin-right: 90px;
+            margin-right: 40px;
 
             > img {
-                height: 26px;
+                height: 22px;
             }
         }
     }
