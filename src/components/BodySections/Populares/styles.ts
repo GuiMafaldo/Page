@@ -7,8 +7,8 @@ export const ContainerSearchsMost = styled.div`
     margin: 100px auto 0;
     padding: 28px 20px 60px;
 
-    @media (max-width: 767px) {
-        width: 80vw;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 90vw;
         margin-left: 5%;
     }
 
@@ -48,8 +48,8 @@ export const ContentMost = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 75vw;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 90vw;
         margin: -10px auto 0;
 
         > h2 {

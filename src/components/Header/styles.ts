@@ -37,10 +37,10 @@ export const ContainerHeader = styled.div`
         } 
     }
 
-    @media (max-width: 767px) {
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        padding: 0 70px  0  0;
         height: 20vh;
         top: 1;
         left: 0;
@@ -87,7 +87,8 @@ export const ContentHeader = styled.div`
         width: 100px;
     }
 
-    @media (max-width: 767px) {
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         text-align: center;

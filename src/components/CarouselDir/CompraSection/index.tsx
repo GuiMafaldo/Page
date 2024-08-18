@@ -47,7 +47,7 @@ const CarouselCompra = () => {
                     <button>Ver apartamentos a venda</button> <br />
                     <span>Como comprar no "name here"</span>
                 </div>
-                <div className='porta'>
+                <div className='fechadura'>
                     <img src="./assets/fechadura.webp" alt="" />
                 </div>
             </ContainerContent>

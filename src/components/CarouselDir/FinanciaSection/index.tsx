@@ -34,7 +34,7 @@ const CarouselFinancia = () => {
                     <button>conheça a nossa assessoria</button> <br />
                     <span>Como comprar no "name here"</span>
                 </div>
-                <div className='poltrona'>
+                <div className='porta'>
                     <img src="./assets/porta.webp" alt="" />
                 </div>
                 <CarouselContent className="carousel-container">

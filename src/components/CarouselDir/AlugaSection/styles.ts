@@ -51,10 +51,9 @@ export const ContainerContent = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 80vw;
-        margin: 38px;
-        margin-top: 100px;
+    @media(min-width: 360px) and (max-width: 767px) {
+        width: 96vw;
+        margin-left: 5%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -62,34 +61,36 @@ export const ContainerContent = styled.div`
 
 
         & .title-and-description {
-            margin-left: 10px;
+            margin-left: 1px;
 
             > h2 {
-                font-size: 1.8em;
+                font-size: 1.7em;
                 margin-bottom: 40px;
             }
 
             > p {
                 font-size: 13px;
-                width: 300px;
+                width: 280px;
             }
 
             > span {
+                margin-left: 20px;
+                font-size: 13px;
                 color: #fff;
             }
 
              > button {
-                width: 80%;
-                font-size: 13px; 
-        }
+                width: 76%;
+                font-size: 12px; 
+            }
         }
 
         & .poltrona {
-            margin: 20px 30px 0 -20px;
+            margin: 20px 30px 0 -70px;
             width: 100%;
 
             > img {
-                width: 26vw;
+                width: 36vw;
             }
         }
     }

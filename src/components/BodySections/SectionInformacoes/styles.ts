@@ -53,8 +53,8 @@ export const CompraVendaInfo = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 80vw;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 96vw;
         flex-direction: column;
         margin-top: 140px;
         margin-left: 5%; 

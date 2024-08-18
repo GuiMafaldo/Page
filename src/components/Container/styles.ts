@@ -8,10 +8,10 @@ export const ContentFlex = styled.div`
     width: 100%;
     padding-top: 1px;
 
-    @media (max-width: 767px) {
-        width: 100vw;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 100%;
         overflow: hidden;
-        padding-top: 0; /* Ajustei para remover o padding desnecessário em dispositivos móveis */
+        padding: 0;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {

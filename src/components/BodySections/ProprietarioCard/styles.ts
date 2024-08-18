@@ -79,25 +79,25 @@ export const ContainerContent = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 80vw;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 96vw;
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 5%;
 
         & .title-and-description {
-            padding: 6px;
-            margin-left: 0;
+            padding: 2px;
+            margin-left: -8px;
 
             > h2 {
-                font-size: 1.4em;
+                font-size: 1.3em;
                 margin-bottom: 40px;
             }
 
             > p {
-                font-size: 13px;
-                width: 300px;
+                font-size: 12px;
+                width: 270px;
             }
         }
 
@@ -117,14 +117,15 @@ export const ContainerContent = styled.div`
             margin-left: 10px;
 
             > h2 {
-                font-size: 1.4em;
+                font-size: 1.2em;
+                margin-left: -20px;
                 margin-bottom: 30px;
             }
 
             & .acordo-image {
-                width: 120px;
+                width: 50px;
                 margin: 0 auto;
-                margin-left: 10%;
+                margin-left: -5%;
 
                 > img {
                     margin-right: 20%;

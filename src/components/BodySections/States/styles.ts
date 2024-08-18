@@ -6,14 +6,14 @@ export const StatesContainer = styled.div`
     flex-wrap: wrap;
     width: 70vw;
     margin: 0 auto;
-    background-color: #d1d1d1; /* Adicionado o código da cor */
+    background-color: #d1d1d1; 
     padding-bottom: 100px;
 
     & .title-and-button {
         margin-top: 120px;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centraliza o conteúdo dentro da coluna */
+        align-items: center; 
 
         > h2 {
             font-family: Helvetica;
@@ -26,7 +26,7 @@ export const StatesContainer = styled.div`
             background-color: #fff;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centraliza o botão */
+            align-items: center; 
             
             > button {
                 width: 100px;
@@ -47,8 +47,8 @@ export const StatesContainer = styled.div`
         }
     }
 
-    @media (min-width: 340px) and (max-width: 767px) {
-        width: 80vw;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 96vw;
         margin-left: 5%;
         margin-top: 100px;
         background-color: #f9f9f9;
@@ -83,7 +83,7 @@ export const StatesContainer = styled.div`
             }
         }
     }
-`;
+`
 
 export const ContentState = styled.div`
     display: flex;
@@ -118,8 +118,8 @@ export const ContentState = styled.div`
         }
     }
 
-    @media (min-width: 340px) and (max-width: 767px) {
-        width: 80vw;
+    @media (min-width: 360px) and (max-width: 767px) {
+        width: 90vw;
         margin-left: 5%;
         margin-top: 80px;
         display: flex;

@@ -53,43 +53,43 @@ export const ContainerContent = styled.div`
         }
     }
 
-    @media (max-width: 767px) {
-        width: 80vw;
-        margin: 38px;
-        margin-top: 40px;
+    @media(min-width: 360px) and (max-width: 767px) {
+        width: 96vw;
+        margin-left: 5%;
         display: flex;
         flex-direction: row;
         align-items: center;
 
         & .title-and-description {
-        margin-left: 10px;
+            margin-left: -6px;
 
             > h2 {
-                font-size: 1.8em;
+                font-size: 1.7em;
                 margin-bottom: 40px;
             }
 
             > p {
-                width: 300px;
-                font-size: 14px;
+                font-size: 13px;
+                width: 280px;
             }
 
             > span {
+                margin-left: 20px;
+                font-size: 13px;
                 color: #fff;
             }
 
-            > button {
-                width: 80%;
-                font-size: 14px; 
+             > button {
+                width: 76%;
+                font-size: 12px; 
             }
         }
 
-        & .poltrona {
-            margin: 10px 20px 0 0;
-            width: 100%;
+        & .porta {
+            margin: 10px 30px 0 -50px;
 
             > img {
-                width: 26vw;
+                width: 34vw;
             }
         }
     }
