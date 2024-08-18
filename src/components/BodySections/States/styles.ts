@@ -119,8 +119,8 @@ export const ContentState = styled.div`
     }
 
     @media (min-width: 360px) and (max-width: 767px) {
-        width: 90vw;
-        margin-left: 5%;
+        width: 80vw;
+        margin-left: 2%;
         margin-top: 80px;
         display: flex;
         flex-direction: row;
