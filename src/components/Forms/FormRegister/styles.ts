@@ -10,7 +10,7 @@ export const ContainerFormulario = styled.div`
     height: 65vh;
     gap: 40px;
     border-radius: 12px;
-    padding: 12px;
+    padding: 13px;
 
     > h2 {
         color: #000;
@@ -42,13 +42,14 @@ export const ContainerFormulario = styled.div`
 
     & .proprietario {
         background-color: #fff;
-        width: 100%;
+        width: 20vw;
         display: flex;
         align-items: center;
         justify-content: space-around;
         border-radius: 12px;
-        padding: 20px;
-        margin-top: 10px;
+        padding: 22px;
+        margin-left: -15px;
+        margin-top: 6px;
 
         > p, span {
             font-family: Helvetica;
@@ -117,6 +118,7 @@ export const ContentForm = styled.form`
             justify-content: space-between;
             padding: 12px;
             width: 100px;
+            margin: 0 auto;
             background-color: #fff;
             border: 1px solid #e3e3e3;
             border-radius: 6px;

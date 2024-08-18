@@ -24,7 +24,7 @@ const ContentStates = () => {
         </StatesContainer>
         <ContentState>
             <div className="content-links">
-                <h3>São Paulo</h3>
+                <h2>São Paulo</h2>
                 <div>
                     <li>Apartamentos para alugar em São Paulo</li>
                     <li>Casas para alugar em São Paulo</li>
@@ -33,7 +33,7 @@ const ContentStates = () => {
                 </div>    
             </div>
             <div className="content-links">
-                <h3>Rio de Janeiro</h3>
+                <h2>Rio de Janeiro</h2>
                 <div>
                     <li>Apartamentos para alugar em Rio de Janeiro</li>
                     <li>Casas para alugar em Rio de Janeiro</li>
@@ -42,7 +42,7 @@ const ContentStates = () => {
                 </div>    
             </div> 
             <div className="content-links">
-                <h3>Porto Alegre</h3>
+                <h2>Porto Alegre</h2>
                 <div>
                     <li>Apartamentos para alugar em Porto Alegre</li>
                     <li>Casas para alugar em Porto Alegre</li>
@@ -51,7 +51,7 @@ const ContentStates = () => {
                 </div>    
             </div> 
             <div className="content-links">
-                <h3>Belo Horizonte</h3>
+                <h2>Belo Horizonte</h2>
                 <div>
                     <li>Apartamentos para alugar em Belo Horizonte</li>
                     <li>Casas para alugar em Belo Horizonte</li>
@@ -60,7 +60,7 @@ const ContentStates = () => {
                 </div>    
             </div>
             <div className="content-links">
-                <h3>Campinas</h3>
+                <h2>Campinas</h2>
                 <div>
                     <li>Apartamentos para alugar em Campinas</li>
                     <li>Casas para alugar em Campinas</li>
@@ -69,7 +69,7 @@ const ContentStates = () => {
                 </div>    
             </div>
             <div className="content-links">
-                <h3>Santo Andre</h3>
+                <h2>Santo Andre</h2>
                 <div>
                     <li>Apartamentos para alugar em Santo Andre</li>
                     <li>Casas para alugar em Santo Andre</li>
@@ -78,7 +78,7 @@ const ContentStates = () => {
                 </div>    
             </div>
             <div className="content-links">
-                <h3>Guarulhos</h3>
+                <h2>Guarulhos</h2>
                 <div>
                     <li>Apartamentos para alugar em Guarulhos</li>
                     <li>Casas para alugar em Guarulhos</li>
@@ -87,7 +87,7 @@ const ContentStates = () => {
                 </div>    
             </div> 
             <div className="content-links">
-                <h3>Osasco</h3>
+                <h2>Osasco</h2>
                 <div>
                     <li>Apartamentos para alugar em Osasco</li>
                     <li>Casas para alugar em Osasco</li>
@@ -96,7 +96,7 @@ const ContentStates = () => {
                 </div>    
             </div>
             <div className="content-links">
-                <h3>Sorocaba</h3>
+                <h2>Sorocaba</h2>
                 <div>
                     <li>Apartamentos para alugar em Sorocaba</li>
                     <li>Casas para alugar em Sorocaba</li>
@@ -105,7 +105,7 @@ const ContentStates = () => {
                 </div>    
             </div>  
             <div className="content-links sbc">
-                <h3>São Bernardo do Campo</h3>
+                <h2>São Bernardo do Campo</h2>
                 <div>
                     <li>Apartamentos para alugar em São Bernardo do Campo</li>
                     <li>Casas para alugar em São Bernardo do Campo</li>

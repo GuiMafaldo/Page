@@ -6,11 +6,11 @@ export const StatesContainer = styled.div`
     flex-wrap: wrap;
     width: 70vw;
     margin: 0 auto;
-    background-color: #d1d1d1; 
+    background-color: #f9f9f9; 
     padding-bottom: 100px;
 
     & .title-and-button {
-        margin-top: 120px;
+        margin: 120px auto 30px auto;
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -19,13 +19,13 @@ export const StatesContainer = styled.div`
             font-family: Helvetica;
             font-size: 2.6em;
             color: #000;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
         }
 
         > div {
             background-color: #fff;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center; 
             
             > button {
@@ -87,32 +87,39 @@ export const StatesContainer = styled.div`
 
 export const ContentState = styled.div`
     display: flex;
-    flex-direction: column;
-    width: 70vw;
+    flex-direction: row;
+    width: 60vw;
     margin: 0 auto;
-    gap: 30px;
+    margin-top: 80px;
+    gap: 40px;
     overflow-y: hidden;
 
     & .content-links {
+        padding: 40px;
+        background-color: #f9f9f9;
+        
         padding-bottom: 40px;
 
-        > h3 {
+        > h2 {
             font-family: Helvetica;
-            font-size: 2.1em;
+            font-size: 1.2em;
             color: #669bbc;
             margin-bottom: 30px;
+            margin-left: -20px;
         }
 
         > div {
             display: flex;
             flex-direction: column; 
-            width: 100%; 
+            width: 90%; 
             
             > li {
                 font-family: Helvetica;
-                font-size: 15px;
+                font-size: 14px;
                 list-style: none;
                 margin-bottom: 30px;
+                margin-left: -20px;
+
                 cursor: pointer;
             }
         }

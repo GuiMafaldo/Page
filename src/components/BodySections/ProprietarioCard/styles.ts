@@ -59,7 +59,9 @@ export const ContainerContent = styled.div`
         flex-direction: column;
         justify-content: space-between;
         background-color: #fefae0;
-        padding: 30px;
+        padding: 60px;
+        margin-right: -20px;
+        width: 500px;
 
         > h2 {
             font-size: 2.2em;
