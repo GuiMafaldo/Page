@@ -80,7 +80,7 @@ export const ContainerContent = styled.div`
     }
 
     @media (min-width: 360px) and (max-width: 767px) {
-        width: 96vw;
+        width: 90vw;
         display: flex;
         flex-direction: row;
         align-items: center;
