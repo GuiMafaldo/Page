@@ -148,7 +148,7 @@ export const TermsPolitcContent = styled.div`
         justify-content: center;
         gap: 30px;
         width: 100%;
-        margin-left: 140px;
+    
 
         > li {
             font-size: 14px;
@@ -184,7 +184,7 @@ export const TermsPolitcContent = styled.div`
             padding-top: 6px;
             gap: 20px;
 
-            > li {
+            > li 
                 font-size: 11px;
                 list-style: none;
             }

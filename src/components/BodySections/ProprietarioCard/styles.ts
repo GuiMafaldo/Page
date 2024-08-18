@@ -117,6 +117,7 @@ export const ContainerContent = styled.div`
         & .acordo {
             padding: 30px;
             margin-left: 10px;
+            margin-right: -16px;
 
             > h2 {
                 font-size: 1em;
